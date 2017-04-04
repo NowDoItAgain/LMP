@@ -1,0 +1,260 @@
+/*media query at bottom*/
+
+
+/*Menu System................................................*/
+
+nav.main {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  /*height: 3rem;*/
+  z-index: 2;
+}
+
+div.menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+
+div.menu {
+  height: 65vh;
+  width: 45vw;
+  /*background-color: rgba(210, 197, 215, 0.975);*/
+  background-color: rgba(235, 235, 235, 0.95);
+  border-radius: .25rem;
+  /*border: 1px solid #eee;*/
+  /*box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.75);*/
+  /*z-index: 1;*/
+}
+
+label {
+  /*display: inline-block;*/
+  margin: 0;
+  text-align: center;
+  border: 0;
+  /*padding: .5rem 0;*/
+}
+
+label[for="show-products"] {
+  width: 27%;
+  /*margin-left: 1rem;*/
+}
+
+label[for="show-learn"], label[for="show-events"], label[for="show-about"], label[for="show-contact"] {
+  width: 16.5%;
+}
+
+label[for="show-menu"] {
+  width: 7%;
+  /*width: 3.5rem;*/
+  /*margin-right: 1rem;*/
+}
+
+div.menu > label {
+  font-size: 1.20rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  color: rgba(163, 161, 161, 1);
+  cursor: pointer;
+  /*border: 1px solid hotpink;*/
+}
+
+/*current selected radio button label*/
+div.menu > input:checked + label {
+  color: rgba(250, 59, 46, 0.9);
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+div.menu > label:hover {
+  color: rgba(250, 59, 46, 0.9);
+  font-weight: bold;
+}
+
+label.close[for="show-menu"]:hover {
+  color: white;
+  stroke: black;
+  stroke-width: 3px;
+}
+
+svg.close {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+    position: absolute;
+}
+
+
+
+
+#dropdown {
+    /* toggle */
+    position: fixed;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* formatting */
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    /* transition */
+    transition-property: all;
+    transition-timing-function: ease;
+    /*transition-timing-function: ease-in-out;*/
+    transition-duration: .35s;
+    z-index: 1;
+}
+
+label.chevron {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  color: rgba(255, 255, 255, 0.40);
+  height: 2.7rem;
+  width: 5rem;
+  /*border-radius: 20%;*/
+  /*border-bottom: 2px solid rgba(255, 255, 255, 0.40);*/
+  /*border-top: 2px solid rgba(255, 255, 255, 0.40);*/
+  /*background-color: rgba(255, 255, 255, 0.30);*/
+  margin-bottom: .5rem;
+}
+
+label.chevron:hover {
+  cursor: pointer;
+}
+
+svg.chevron {
+  height: 3rem;
+  width: 3rem;
+}
+
+input[type="checkbox"]:checked ~ #dropdown {
+    /* toggle */
+    top: 0;
+}
+
+div.products,
+div.learn,
+div.events,
+div.about,
+div.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  background-color: #ddd;
+}
+
+/*testing..........................*/
+
+div.products {
+  /*background-color: lightblue;*/
+  order: 2;
+  left: 0;
+}
+
+div.contact {
+  /*background-color: lightpink;*/
+  order: 3;
+}
+div.about {
+  /*background-color: gray;*/
+  order: 3;
+}
+div.events {
+  /*background-color: firebrick;*/
+  order: 3;
+}
+div.learn {
+  /*background-color: lightyellow;*/
+  order: 3;
+}
+
+/*end testing........................*/
+
+
+
+input[type="radio"] {
+    display: none;
+    position: absolute;
+}
+
+input#show-products[type="radio"]:checked ~ #products {
+    left: 0;
+}
+
+input#show-learn[type="radio"]:checked ~ #learn,
+input#show-events[type="radio"]:checked ~ #events,
+input#show-about[type="radio"]:checked ~ #about,
+input#show-contact[type="radio"]:checked ~ #contact {
+    order: 1;
+    left: 0;
+}
+
+label.menu {
+  cursor: pointer;
+  /*font-size: 1.75rem;*/
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  /*margin: 1rem 1rem;*/
+  font-family: 'Lato', sans-serif;
+  padding: 1.5rem 1rem 0 1rem;
+  color: rgba(198, 54, 44, 1);
+  font-weight: bold;
+  font-size: 1.4rem;
+  width: 10rem;
+  /*border: 1px solid pink;*/
+}
+
+
+.navicon {
+  /*border: 1px solid pink;*/
+  /*display: inline-block;*/
+  width: 20px;
+  height: 20px;
+  fill: rgb(198, 54, 44,);
+  /*padding: 1.5rem 1rem 0 1rem;*/
+  /*color: black;*/
+}
+
+label.menu:hover {
+  color: rgba(250, 59, 46, 0.9);
+}
+
+
+
+
+/*End-Menu System...............................................................*/
+
+@media screen and (max-width: 800px)
+{
+    #dropdown
+    {
+        display: none;
+    }
+
+    #main-nav {
+      display: none;
+    }
+
+    #pages-main-nav {
+      display: none;
+    }
+}

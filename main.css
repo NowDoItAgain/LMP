@@ -1,0 +1,157 @@
+
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+section.atf {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-image: url("photos/YL-HOME-2048x1240.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header.logo{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  /*border: 1px solid pink;*/
+  width: 25rem;
+  height: 5rem;
+}
+
+div.social {
+  /*width: 10rem;*/
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: rgba(198, 54, 44, .9);
+  /*border: 1px solid pink;*/
+  height: 4rem;
+}
+
+a.social:hover {
+  color: rgba(250, 59, 46, 0.9);
+}
+
+svg.social {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+h1.logo {
+  /*position: fixed;
+  top: 1rem;
+  right: 1rem;*/
+  /*display: inline-block;*/
+  font-family: 'Allura', 'Garamond', cursive;
+  /*letter-spacing: .135rem;*/
+  text-align: center;
+  font-size: 3.15rem;
+  font-weight: bold;
+  color: rgba(198, 54, 44, 1);
+  /*margin-top: 5rem;*/
+  padding: .5rem 2rem;
+  margin-right: 2rem;
+  cursor: default;
+  /*border: 1px solid hotpink;*/
+}
+
+figure.YL{
+  background-image: url("photos/YL-greyscale.png");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  bottom: 2rem;
+  /*top: 4rem;*/
+  right: 2rem;
+  /*border: 1px solid hotpink;*/
+  width: 16rem;
+  height: 7.5rem;
+  opacity: .80;
+}
+
+
+
+div.intro {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  top: 40%;
+  left: -25%;
+  /*border: 1px solid hotpink;*/
+  width: 24rem;
+  background-color: rgba(198, 54, 44, .90);
+  color: rgba(255, 255, 255, 1);
+  border-radius: .3rem;
+  padding: 1.5rem 1.5rem;
+  /*color: rgb(153, 59, 31);*/
+}
+
+div.intro > h1 {
+  /*width: 90%;*/
+  font-family: 'Garamond', serif;
+  font-size: 1.7rem;
+  margin-bottom: .8rem;
+  /*border-bottom: 1px solid white;*/
+
+  /*font-weight: bold;*/
+}
+
+div.intro h1:first-child {
+  font-size: 2.3rem;
+  /*font-weight: bold;*/
+}
+
+div.intro h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.15rem;
+  margin-bottom: .8rem;
+}
+
+div.intro a{
+  /*display: inline-block;*/
+  box-sizing: border-box;
+  padding: .65rem 1.25rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgba(198, 54, 44, 1);
+  /*color: white;*/
+  background-color: white;
+  border-radius: .15rem;
+  margin: 0 .5rem;
+  align-self: center;
+}
+
+div.intro a:hover {
+  color: rgba(250, 59, 46, 0.9);
+  background-color: #EDEAE3;
+}
+
+h1 > span {
+  display: inline-block;
+  font-family: 'Allura', 'Garamond', cursive;
+  font-size: 2.2rem;
+  color: white;
+}
+
+a.main {
+  text-decoration: none;
+  color: inherit;
+  padding: 1.5rem 1rem 0 1rem;
+}
+
+a.main:hover {
+  /*text-decoration: underline;*/
+  color: #E35743;
+}

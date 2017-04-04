@@ -1,0 +1,14 @@
+1. for menus or assets used by more than one page: use root relative paths e.g. /Test-LMP-2/assets/icons.svg
+
+2. maybe???  put svg def within html
+
+3. edited XAMPP
+  edited the DocumentRoot setting in XAMPP\apache\conf\httpd.conf.
+
+  It was originally:
+  DocumentRoot "C:/xampp/htdocs"
+  <Directory "C:/xampp/htdocs">
+
+  Changed it to:
+  DocumentRoot "C:/xampp/htdocs/Test-LMP-2"
+  <Directory "C:/xampp/htdocs/Test-LMP-2">
