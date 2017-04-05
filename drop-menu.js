@@ -3,10 +3,16 @@ document.write('\
 <input type="checkbox" id="show-menu">\
 \
 <div id="dropdown" class="layer">\
-    <div class="menu">\
+  <div class="menu">\
+    \
+    <a class="home" href="/index.html">\
+      <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>\
+    </a>\
 \
       <input name="menulist" type="radio" id="show-products" checked="checked">\
-      <label for="show-products">Products &amp; Membership</label>\
+      <label for="show-products">Products</label>\
+      <input name="menulist" type="radio" id="show-membership">\
+      <label for="show-membership">Membership</label>\
       <input name="menulist" type="radio" id="show-learn">\
       <label for="show-learn">Learn</label>\
       <input name="menulist" type="radio" id="show-events">\
@@ -20,11 +26,12 @@ document.write('\
         <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>\
       </label>\
 \
-      <div id="products" class="products"><a href="/pages/products.html">Products</a></div>\
-      <div id="learn" class="learn">Learn</div>\
-      <div id="events" class="events">Events</div>\
-      <div id="about" class="about">About</div>\
-      <div id="contact" class="contact">Contact</div>\
+      <div id="products" class="products"><a class="temp" href="/pages/products.html">Products</a></div>\
+      <div id="membership" class="membership"><a class="temp" href="/pages/membership.html">Membership</a></div>\
+      <div id="learn" class="learn"><a class="temp" href="/pages/learn.html">Learn</a></div>\
+      <div id="events" class="events"><a class="temp" href="/pages/events.html">Events</a></div>\
+      <div id="about" class="about"><a class="temp" href="/pages/about.html">About</a></div>\
+      <div id="contact" class="contact"><a class="temp" href="/pages/contact.html">Contact</a></div>\
     </div>\
 \
     <div class="close">\

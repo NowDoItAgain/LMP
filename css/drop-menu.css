@@ -24,7 +24,7 @@ div.menu {
 
 div.menu {
   height: 65vh;
-  width: 45vw;
+  width: 50vw;
   /*background-color: rgba(210, 197, 215, 0.975);*/
   background-color: rgba(235, 235, 235, 0.95);
   border-radius: .25rem;
@@ -41,13 +41,33 @@ label {
   /*padding: .5rem 0;*/
 }
 
+a.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7%;
+  color: rgba(163, 161, 161, 1);
+  /*border: 1px solid hotpink;*/
+}
+
+a.home:hover {
+  color: white;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+svg.home {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
 label[for="show-products"] {
-  width: 27%;
+  width: 14.33%;
   /*margin-left: 1rem;*/
 }
 
-label[for="show-learn"], label[for="show-events"], label[for="show-about"], label[for="show-contact"] {
-  width: 16.5%;
+label[for="show-learn"], label[for="show-events"], label[for="show-about"], label[for="show-membership"], label[for="show-contact"] {
+  width: 14.33%;
 }
 
 label[for="show-menu"] {
@@ -57,7 +77,7 @@ label[for="show-menu"] {
 }
 
 div.menu > label {
-  font-size: 1.20rem;
+  font-size: 1.1rem;
   font-weight: bold;
   padding: 1rem 0;
   color: rgba(163, 161, 161, 1);
@@ -124,7 +144,7 @@ label.chevron {
   justify-content: center;
   align-items: center;
   align-self: flex-end;
-  color: rgba(255, 255, 255, 0.40);
+  color: rgba(255, 255, 255, 0.95);
   height: 2.7rem;
   width: 5rem;
   /*border-radius: 20%;*/
@@ -149,15 +169,31 @@ input[type="checkbox"]:checked ~ #dropdown {
 }
 
 div.products,
+div.membership,
 div.learn,
 div.events,
 div.about,
 div.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
   left: -100%;
   background-color: #ddd;
+}
+
+a.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: .5rem;
+  height: 7rem;
+  width: 14rem;
+  font-size: 2rem;
+  color: rgba(163, 161, 161, 1);
+  border: 2px solid rgba(163, 161, 161, 1);
 }
 
 /*testing..........................*/
@@ -166,6 +202,10 @@ div.products {
   /*background-color: lightblue;*/
   order: 2;
   left: 0;
+}
+div.membership {
+  /*background-color: lightpink;*/
+  order: 3;
 }
 
 div.contact {
@@ -198,6 +238,7 @@ input#show-products[type="radio"]:checked ~ #products {
     left: 0;
 }
 
+input#show-membership[type="radio"]:checked ~ #membership,
 input#show-learn[type="radio"]:checked ~ #learn,
 input#show-events[type="radio"]:checked ~ #events,
 input#show-about[type="radio"]:checked ~ #about,

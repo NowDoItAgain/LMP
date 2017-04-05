@@ -47,8 +47,8 @@ a.social:hover {
 }
 
 svg.social {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.4rem;
+  width: 1.4rem;
 }
 
 h1.logo {
@@ -71,6 +71,10 @@ h1.logo {
 
 h1.logo:hover {
   color: rgba(250, 59, 46, 0.9);
+}
+
+header > a {
+  margin-right: 2rem;
 }
 
 nav.side {
@@ -206,8 +210,8 @@ div.heading {
 }
 
 div.heading h1 {
-  font-size: 5.25rem;
-  font-family: 'Garamond',sans-serif;
+  font-size: 4rem;
+  font-family: 'Raleway',sans-serif;
   /*font-weight: bold;*/
   width: 33%;
   text-align: center;

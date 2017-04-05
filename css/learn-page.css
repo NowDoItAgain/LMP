@@ -1,0 +1,91 @@
+html {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid pink;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  /*font-variant: small-caps;*/
+}
+
+
+div.social {
+  width: 4rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(198, 54, 44, .9);
+  /*border: 1px solid pink;*/
+  height: 4rem;
+  margin-right: 3rem;
+}
+
+a.social:hover {
+  color: rgba(250, 59, 46, 0.9);
+}
+
+svg.social {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+h1.logo {
+    /*position: fixed;
+    top: 1rem;
+    right: 1rem;*/
+    /*display: inline-block;*/
+    font-family: 'Allura', 'Garamond', cursive;
+    /*letter-spacing: .135rem;*/
+    text-align: center;
+    font-size: 2.15rem;
+    font-weight: bold;
+    color: rgba(198, 54, 44, 1);
+    /*margin-top: 5rem;*/
+    padding: .5rem 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    /*border: 1px solid hotpink;*/
+}
+
+h1.logo:hover {
+  color: rgba(250, 59, 46, 0.9);
+}
+
+div.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+  font-size: 6rem;
+}
+
+footer {
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+  padding-left: 4rem;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+header > a {
+  margin-right: 2rem;
+}
