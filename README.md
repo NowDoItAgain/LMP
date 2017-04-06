@@ -1,2 +1,5 @@
-# LMP Lil Miss Pure -  Still Ongoing
-full website build Lil Miss Pure
+# LMP - Lil Miss Pure (Still Ongoing)
+
+## 1st full website build
+
+This is a personal project
