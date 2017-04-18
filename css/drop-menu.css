@@ -273,9 +273,10 @@ label.menu {
 .navicon {
   /*border: 1px solid pink;*/
   /*display: inline-block;*/
-  width: 20px;
-  height: 20px;
+  width: 1.2rem;
+  height: 1.2rem;
   fill: rgb(198, 54, 44,);
+  margin-right: .3rem;
   /*padding: 1.5rem 1rem 0 1rem;*/
   /*color: black;*/
 }
