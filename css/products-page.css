@@ -175,6 +175,7 @@ section.instrux {
   padding: 4rem 0 4rem 0;
   /*border: 1px solid black;*/
   padding-top: 4rem;
+  min-width: 50rem;
 
 }
 
@@ -194,20 +195,10 @@ div.display {
   justify-content: center;
   align-items: center;
   margin-left: 18.5rem;
-  /*width: 80%;*/
-  /*border: 1px solid black;*/
-  /*border-radius: .25rem;*/
-  /*width: 100%;*/
+  min-width: 50rem;
   height: 77vh;
   padding: 4rem 2rem 0 2rem;
   /*color: #9f9f9f;*/
-  /*background-image: url(/photos/lav-promo.jpg);*/
-  /*background-size: 112% auto;*/
-  /*background-size: cover;*/
-  /*background-position: bottom;*/
-  /*margin-left: 5rem;*/
-  /*background-position-x: -12rem;*/
-  /*background-position-y: -32rem;*/
 }
 
 
@@ -247,7 +238,7 @@ div.compare {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 2rem;
 }
 
@@ -271,7 +262,8 @@ section.retail * {
 section.member, section.retail {
   display: flex;
   flex-flow: column nowrap;
-  width: 30%;
+  min-width: 25rem;
+  max-width: 30rem;
   /*border: 1px solid black;*/
   padding: 1rem 1rem 1rem 1rem;
   margin-top: 1rem;
@@ -281,11 +273,11 @@ section.member, section.retail {
 }
 
 section.member {
-  margin-right: 7rem;
+  /*margin-right: 7rem;*/
 }
 
 section.retail {
-  margin-left: 7rem;
+  /*margin-left: 7rem;*/
 }
 
 
@@ -441,7 +433,7 @@ section.sk-display {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  width: 80rem;
+  width: 73rem;
 }
 
 section.spacer {
@@ -464,8 +456,8 @@ div.sk-description p {
 }
 
 img.sk {
-  height: 53rem;
-  width: 80rem;
+  height: 48rem;
+  width: 73rem;
 }
 
 
@@ -595,9 +587,13 @@ div.thieves-sk h1 {
 /*products-singles********************************************************/
 
 img.singles, img.blends {
-  height: 15.7rem;
-  width: 6.3rem;
+  /*margin-left: 41.6%;*/
+  min-height: 8.4rem;
+  min-width: 3.5rem;
+  max-height: 15.6rem;
+  max-width: 6.5rem;
   margin-top: 2rem;
+  /*overflow: hidden;*/
 }
 
 div.oils {
@@ -616,9 +612,13 @@ section.singles-display, section.blends-display {
   justify-content: center;
   align-items: center;
   align-content: center;
-  width: 33%;
-  min-height: 35rem;
-  /*padding: 0 5rem 10rem 5rem;*/
+  width: 33.33%;
+  min-width: 30rem;
+  height: 55vh;
+  min-height: 30rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-top: 5rem;
   /*border: 1px solid hotpink;*/
 }
 
@@ -627,6 +627,7 @@ div.wrapper {
   flex-flow: row nowrap;
   justify-content: center;
   width: 100%;
+  height: 90%;
 }
 
 section.large {
@@ -639,8 +640,9 @@ div.description {
   flex-flow: column nowrap;
   justify-content: space-between;
   padding: 1rem 1rem;
-  min-height: 18.5rem;
-  min-width: 17rem;
+  height: 90%;
+  /*height: 100%;*/
+  width: 75%;
   /*background-color: #CFDBD4;*/
   /*border: 1px solid #CFDBD4;*/
 }
@@ -686,11 +688,11 @@ span.price {
 
 div.purchase {
   margin: 0;
-  width: 75%;
+  width: 50%;
   display: flex;
   justify-content: center;
   /*border: 1px solid hotpink;*/
-  margin-top: 4rem;
+  /*margin-top: 2rem;*/
 }
 
 a.purchase {
