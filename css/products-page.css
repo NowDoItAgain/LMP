@@ -1,7 +1,7 @@
 html {
   font-family: "Lato", sans-serif;
   /*this font-hack makes the font responsive with a max & min*/
-  font-size: calc(9.5px + .34vw);
+  font-size: calc(9.5px + .272vw);
 
 }
 

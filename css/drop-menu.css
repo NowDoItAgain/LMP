@@ -291,14 +291,14 @@ label.menu:hover {
 {
     #dropdown
     {
-        display: none;
+        top: -200vh;
     }
 
     #main-nav {
-      display: none;
+      /*display: none;*/
     }
 
     #pages-main-nav {
-      display: none;
+      /*display: none;*/
     }
 }
