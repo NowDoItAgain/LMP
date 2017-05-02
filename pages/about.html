@@ -16,16 +16,12 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="/css/mcleod-reset.css">
-    <link rel="stylesheet" href="/css/drop-menu.css">
     <link rel="stylesheet" href="/css/about-page.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <script id="pages-menuscript" src="/drop-menu.js"></script>
 
   <header>
       <a href="/index.html" class="home"><h1 class="logo" title="Distributor # 2831347">Lil&nbsp;Miss&nbsp;Pure</h1></a>
@@ -35,19 +31,164 @@
       </div>
   </header>
 
-  <div class="temp">
+    <section class="about">
+      <h1 class="about">About</h1>
+      <div class="profile">
+        <div class="independent">
+          <h1 class="profile">Krista&nbsp;Faught</h1>
+          <!-- <img src="/photos/YL-greyscale.png" alt="" class="independent"> -->
 
-    <svg><use xlink:href="/assets/icons.svg#cone"></use></svg>
+        </div>
+        <div class="profile-card">
+            <img src="/photos/about/face.png" alt="Krista Faught" class="profile" title="Krista Faught">
+          <a href="/pages/contact.html" target="_blank" class="c-card" title="Contact Info"><i class="icon-address-card-o" aria-hidden="true"></i></a>
+        </div>
 
-      Under Constuction
+        <p class="profile">I began using essential oils and all natural products during my pregnancy.  As a pharmacist, I knew enough about chemicals and pharmaceuticals that I did NOT want them getting into my system and reaching my developing child.  So the research began!  At first, I was just using essential oils that I found on the internet.  I was also using <a href="http://ewg.org" target="_blank">EWG.org</a>, to see just how safe the plethora of “natural” products actually are.  To my dismay, MANY are not that safe!  (Use <a href="http://ewg.org" target="_blank">EWG.org</a> to see for yourself.)</p>
+        <p class="profile">Through my research I found Young Living. Unlike any other essential oil on the market, Young Living has their own organic farms, grows all their own plants and are involved in each and every step of the entire oil making process.  Similar to all supplements and herbals, essential oils are not FDA regulated.  So what is advertised on the label, may or may not be what is actually in the bottle!  Young Living has the “Seed to Seal” guarantee.  They also use independent researchers to test the quality and integrity of their oils.  Young Living is THE highest quality oil in the world.  Check out the <a href="https://www.youngliving.com/en_US/discover/seed-to-seal/index?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">“Seed to Seal”</a> page for more info.</p>
+        <p class="profile">Furthermore, I also appreciated the fact that Young Living is more than just quality oils.  They make household products, baby products, beauty products, animal products, supplements, and so much more.  I decided to give Young Living a try.</p>
+        <p class="profile">Now, there is no looking back!  I could tell a difference immediately between my new Young Living oils and my other “100% Pure” oils that I had been using.  With regard to purchasing all my other non-toxic products, instead of wasting time going to numerous websites, looking at various companies and cross checking on ewg.org I simply go to Young Living.  Young Living’s cleaning products, supplements, personal products all non-toxic, they are oil infused, which gets even more of the good stuff into your body!  It is a win-win!</p>
+        <p class="profile">Now my mission is education.  I want others to discover what I have.  You too can improve your health and wellness by eliminating toxins from your life and infusing QUAILITY essential oils into your body.</p>
+      </div>
 
-    <svg><use xlink:href="/assets/icons.svg#cone"></use></svg>
-
-  </div>
+    </section>
 
   <footer>
     <div>Icons made by <a href="http://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
   </footer>
+
+  <!-- optimizing CSS (Google's Page-Speed-Tools)-->
+
+
+  <noscript id="deferred-styles">
+
+    <link rel="stylesheet" href="/css/drop-menu.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
+    <!-- <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
+
+  </noscript>
+  <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function() {
+      window.setTimeout(loadDeferredStyles, 0);
+    });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+    <!-- end-optimizing-CSS -->
+
+  <!--drop down menu  -->
+  <input type="checkbox" id="show-menu">
+
+  <div id="dropdown" class="layer">
+      <div class="menu">
+
+        <a class="home" href="/index.html">
+          <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>
+        </a>
+
+        <input name="menulist" type="radio" id="show-products" checked="checked">
+        <label for="show-products">Products</label>
+        <input name="menulist" type="radio" id="show-membership">
+        <label for="show-membership">Membership</label>
+        <input name="menulist" type="radio" id="show-learn">
+        <label for="show-learn">Learn</label>
+        <input name="menulist" type="radio" id="show-events">
+        <label for="show-events">Events</label>
+        <input name="menulist" type="radio" id="show-about">
+        <label for="show-about">About</label>
+        <input name="menulist" type="radio" id="show-contact">
+        <label name="menulist" for="show-contact">Contact</label>
+
+        <label class="close" for="show-menu">
+          <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>
+        </label>
+
+        <div id="products" class="products">
+          <a class="temp" href="/pages/products.html">
+            <h1>Products</h1>
+            <div class="shell">
+              <i class="icon-gift" aria-hidden="true"></i>
+              <i class="icon-sale" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="membership" class="membership">
+          <a class="temp" href="/pages/membership.html">
+            <h1>Membership</h1>
+            <div class="shell">
+              <i class="icon-user" aria-hidden="true"></i>
+              <i class="icon-discout" aria-hidden="true"></i>
+              <i class="icon-key" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="learn" class="learn">
+          <a class="temp" href="/pages/learn.html">
+            <h1>Learn</h1>
+            <div class="shell">
+              <i class="icon-book-open" aria-hidden="true"></i>
+              <i class="icon-lightbulb" aria-hidden="true"></i>
+              <i class="icon-pencil" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="events" class="events">
+          <a class="temp" href="/pages/events.html">
+            <h1>Events</h1>
+            <div class="shell">
+              <i class="icon-calendar" aria-hidden="true"></i>
+              <i class="icon-clock" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="about" class="about">
+          <a class="temp" href="/pages/about.html">
+            <h1>About</h1>
+            <div class="shell">
+              <i class="icon-information" aria-hidden="true"></i>
+              <i class="icon-address-card-o" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="contact" class="contact">
+          <a class="temp" href="/pages/contact.html">
+            <h1>Contact</h1>
+            <div class="shell">
+              <i class="icon-phone2" aria-hidden="true"></i>
+              <i class="icon-map" aria-hidden="true"></i>
+              <i class="icon-envelope-o" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="close">
+        <label class="chevron" for="show-menu">
+          <svg class="chevron"><use xlink:href="/assets/icons.svg#chevron-up"></use></svg>
+        </label>
+      </div>
+        <!-- <label class="close" for="show-menu">X</label> -->
+  </div>
+
+  <nav id="main-nav" class="main">
+    <label class="menu" for="show-menu">
+      <svg class="navicon"><use xlink:href="/assets/icons.svg#navicon"></use></svg>
+      MENU</label>
+  </nav>
+
+  <!--end-drop down menu  -->
+
+
 
 </body>
 

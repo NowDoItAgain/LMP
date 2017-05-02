@@ -1,6 +1,12 @@
 html {
   font-family: "Lato", sans-serif;
+  font-size: calc(9.5px + .272vw);
 }
+
+body {
+
+}
+
 
 header {
   position: fixed;
@@ -8,11 +14,18 @@ header {
   left: 0;
   height: 4rem;
   width: 100%;
+  /*margin-left: 18.5rem;*/
+  z-index: 2;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  align-items: center;
-  border: 1px solid pink;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 .5px 2.5px .1px rgba(0, 0, 0, .45);
+}
+
+header > a {
+  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 h1 {
@@ -22,11 +35,12 @@ h1 {
 
 
 div.social {
-  width: 4rem;
+  width: 6rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  /*align-self: flex-end;*/
   color: rgba(198, 54, 44, .9);
   /*border: 1px solid pink;*/
   height: 4rem;
@@ -43,49 +57,162 @@ svg.social {
 }
 
 h1.logo {
-    /*position: fixed;
+  /*position: fixed;
     top: 1rem;
     right: 1rem;*/
-    /*display: inline-block;*/
-    font-family: 'Allura', 'Garamond', cursive;
-    /*letter-spacing: .135rem;*/
-    text-align: center;
-    font-size: 2.15rem;
-    font-weight: bold;
-    color: rgba(198, 54, 44, 1);
-    /*margin-top: 5rem;*/
-    padding: .5rem 2rem;
-    margin-right: 2rem;
-    cursor: pointer;
-    /*border: 1px solid hotpink;*/
+  /*display: inline-block;*/
+  font-family: 'Allura', 'Garamond', cursive;
+  /*letter-spacing: .135rem;*/
+  text-align: center;
+  font-size: 2.15rem;
+  font-weight: bold;
+  color: rgba(198, 54, 44, 1);
+  /*margin-top: 5rem;*/
+  padding: .5rem 2rem;
+  margin-right: 2rem;
+  cursor: pointer;
+  /*border: 1px solid hotpink;*/
 }
 
 h1.logo:hover {
   color: rgba(250, 59, 46, 0.9);
 }
 
-div.temp {
+
+section.about {
+  /*width: 100%;*/
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*height: 200vh;*/
+  background-color: #fff;
+  padding-top: 7rem;
+  margin: 0 13.5%;
+  min-height: 100vh;
+}
+
+div.profile {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+div.independent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  margin: 3rem 2rem 1rem 4rem;
+}
+
+img.independent {
+  width: 18rem;
+  height: 6rem;
+  opacity: .8;
+}
+
+img.profile {
+  /*float: right;*/
+  width: 12rem;
+  height: 16rem;
+  /*margin: 2rem 0 2rem 4rem;*/
+}
+
+div.profile-card {
+  display: inline-block;
+  float: right;
+  width: 12rem;
+  /*height: 27rem;*/
+  /*display: flex;*/
+  /*flex-flow: row wrap;*/
+  /*justify-content: center;*/
+  padding-top: 1rem;
+  margin: 0 0 1rem 3rem;
+  /*border: 1px solid pink;*/
+}
+
+a.c-card {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 95vh;
-  width: 100vw;
-  font-size: 6rem;
+  width: 12rem;
 }
+
+i.icon-address-card-o {
+  font-size: 5rem;
+  stroke: #999;
+  fill: #999;
+  color: #999;
+  /*decreases stroke for fontawesome*/
+  /*-webkit-text-stroke: 3px white;*/
+}
+
+i.icon-address-card-o:hover {
+  color: rgba(250, 59, 46, 0.9);
+  stroke: rgba(198, 54, 44, 1);
+  /*text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);*/
+}
+
+h1.about {
+  /*font-family: 'Allura', 'Garamond', cursive;*/
+  color: rgba(198, 54, 44, 1);
+  font-size: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1.5rem 0;
+}
+
+span.lmp {
+  font-family: 'Allura', 'Garamond', cursive;
+  color: rgba(198, 54, 44, 1);
+  font-size: 2.5rem;
+  /*line-height: 1.5;*/
+}
+
+h1.profile {
+  /*padding: 1.1rem;*/
+  /*font-family: 'Allura', 'Garamond', cursive;*/
+  color: rgba(198, 54, 44, 1);
+  font-size: 2rem;
+  /*font-weight: bold;*/
+  /*margin: 1rem 0;*/
+  width: 18rem;
+  text-align: center;
+  /*border: 1px solid pink;*/
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  margin: 0 2rem 0 2rem;
+  color: #665;
+  line-height: 1.35;
+  width: 100%;
+  /*border: 1px solid pink;*/
+}
+
+p.profile a {
+  color: rgba(198, 54, 44, 1);
+  /*font-weight: bold;*/
+}
+
+p.profile a:hover {
+  color: rgba(250, 59, 46, 0.9);
+  text-decoration: underline;
+}
+
+
 
 footer {
   font-size: .9rem;
   display: flex;
   align-items: center;
-  height: 5vh;
-  width: 100vw;
+  height: 3rem;
+  width: 100%;
   padding-left: 4rem;
 }
 
 footer a {
   text-decoration: underline;
-}
-
-header > a {
-  margin-right: 2rem;
 }

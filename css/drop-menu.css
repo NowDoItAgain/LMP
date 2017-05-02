@@ -3,6 +3,21 @@
 
 /*Menu System................................................*/
 
+/*
+moved to atf.css for each page
+input[type="checkbox"] {
+    display: none;
+    position: absolute;
+}
+*/
+
+
+
+/*remove this after adjustments*/
+input[type="checkbox"] {
+    display: none;
+    position: absolute;
+}
 
 
 div.menu {
@@ -15,8 +30,8 @@ div.menu {
 
 
 div.menu {
-  height: 70vh;
-  width: 65vw;
+  height: 70%;
+  width: 65%;
   /*background-color: rgba(210, 197, 215, 0.975);*/
   background-color: rgba(235, 235, 235, 0.95);
   border-radius: .25rem;
@@ -53,10 +68,18 @@ svg.home {
 label[for="show-products"] {
   width: 14.33%;
   /*margin-left: 1rem;*/
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 label[for="show-learn"], label[for="show-events"], label[for="show-about"], label[for="show-membership"], label[for="show-contact"] {
   width: 14.33%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 label[for="show-menu"] {
@@ -66,7 +89,7 @@ label[for="show-menu"] {
 }
 
 div.menu > label {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: bold;
   padding: 1rem 0;
   color: rgba(163, 161, 161, 1);
@@ -96,13 +119,6 @@ svg.close {
   height: 1.6rem;
   width: 1.6rem;
 }
-
-
-input[type="checkbox"] {
-    display: none;
-    position: absolute;
-}
-
 
 
 
@@ -168,21 +184,55 @@ div.contact {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 91%;
   left: -100%;
   background-color: #ddd;
 }
 
 a.temp {
   display: flex;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: center;
   border-radius: .5rem;
-  height: 7rem;
-  width: 14rem;
+  height: 85%;
+  width: 90%;
   font-size: 2rem;
   color: rgba(163, 161, 161, 1);
   border: 2px solid rgba(163, 161, 161, 1);
+  padding: 1rem 0;
+}
+
+a.temp:hover {
+  color: rgba(250, 59, 46, 0.9);
+  border: 2px solid rgba(250, 59, 46, 0.9);
+}
+
+a.temp h1 {
+  margin: 1rem 0 2rem 0;
+  font-size: 3.5rem;
+  /*font-weight: bold;*/
+}
+
+div.shell {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 2rem 2rem 2rem;
+    width: 80%;
+}
+
+
+div.shell i.icon-address-card-o {
+  font-size: 12rem;
+  color: inherit;
+  /*decreases stroke for fontawesome*/
+  /*-webkit-text-stroke: 3px rgba(235, 235, 235, 0.95);*/
+}
+
+div.shell i {
+  font-size: 12rem;
+  color: inherit;
+  margin: 1rem 2rem 2rem 2rem;
 }
 
 /*testing..........................*/

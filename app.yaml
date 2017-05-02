@@ -4,5 +4,35 @@ runtime: go
 api_version: go1
 
 handlers:
+
+#cache control
+#- url: /photos
+#static_dir: photos
+#expiration: "8d 0m"
+
+#- url: /photos/membership
+#static_dir: membership
+#expiration: "8d 0m"
+
+#- url: /photos/product-photos
+#static_dir: product-photos
+#expiration: "8d 0m"
+
+#- url: /css
+#  static_dir: css
+#  expiration: "8d 0m"
+
+#- url: /min-css
+#  static_dir: min-css
+#  expiration: "8d 0m"
+
+#- url: /min-css
+#  static_dir: min-css
+#  expiration: "8d 0m"
+
+#- url: /font-awesome/css
+#  static_dir: css
+#  expiration: "8d 0m"
+
 - url: /.*
   script: _go_app

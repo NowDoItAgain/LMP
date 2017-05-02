@@ -18,16 +18,17 @@
   <link rel="stylesheet" href="/css/mcleod-reset.css">
 
   <link rel="stylesheet" href="/css/products-page.css">
-  <link rel="stylesheet" href="/css/drop-menu.css">
+
+  <!-- <link rel="stylesheet" href="/css/drop-menu.css"> -->
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet"> -->
   <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 </head>
 
 <body id="topPage">
 
   <!-- javascript write-in was changed to php include -->
-  <script id="pages-menuscript" src="/drop-menu.js"></script>
+  <!-- <script id="pages-menuscript" src="/drop-menu.js"></script> -->
 
   <!-- <?php require $_SERVER['DOCUMENT_ROOT'] ."/assets/drop-menu.php"; ?> -->
 
@@ -91,11 +92,11 @@
       </section>
     </div>
     <div class="decide">
-      <p class="decide">*** Get full details about membership by visiting the
-        <br><a href="/pages/membership.html">Membership page...</a>
+      <p class="decide">&#x2780;&nbsp; Get full details about membership by visiting the
+        <a href="/pages/membership.html">Membership page...</a>
       </p>
 
-      <p class="decide">*** Once you have decided, you can register at Young Living by clicking the<br> <span class="sign-up" title="In the left menu bar">sign-up</span> tab on the left.</p>
+      <p class="decide">&#x2781;&nbsp; Once you have decided, you can register at Young Living by clicking the <span class="sign-up" title="In the navigation bar">sign-up</span> tab.</p>
         <span title="Generates automatically from this site" class="lmp">Lil Miss Pure Distributor # 2831347</span>
     </div>
 
@@ -653,6 +654,138 @@
   </section>
 
 
+
+  <!--drop down menu  -->
+  <input type="checkbox" id="show-menu">
+
+  <div id="dropdown" class="layer">
+      <div class="menu">
+
+        <a class="home" href="/index.html">
+          <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>
+        </a>
+
+        <input name="menulist" type="radio" id="show-products" checked="checked">
+        <label for="show-products">Products</label>
+        <input name="menulist" type="radio" id="show-membership">
+        <label for="show-membership">Membership</label>
+        <input name="menulist" type="radio" id="show-learn">
+        <label for="show-learn">Learn</label>
+        <input name="menulist" type="radio" id="show-events">
+        <label for="show-events">Events</label>
+        <input name="menulist" type="radio" id="show-about">
+        <label for="show-about">About</label>
+        <input name="menulist" type="radio" id="show-contact">
+        <label name="menulist" for="show-contact">Contact</label>
+
+        <label class="close" for="show-menu">
+          <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>
+        </label>
+
+        <div id="products" class="products">
+          <a class="temp" href="/pages/products.html">
+            <h1>Products</h1>
+            <div class="shell">
+              <i class="icon-gift" aria-hidden="true"></i>
+              <i class="icon-sale" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="membership" class="membership">
+          <a class="temp" href="/pages/membership.html">
+            <h1>Membership</h1>
+            <div class="shell">
+              <i class="icon-user" aria-hidden="true"></i>
+              <i class="icon-discout" aria-hidden="true"></i>
+              <i class="icon-key" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="learn" class="learn">
+          <a class="temp" href="/pages/learn.html">
+            <h1>Learn</h1>
+            <div class="shell">
+              <i class="icon-book-open" aria-hidden="true"></i>
+              <i class="icon-lightbulb" aria-hidden="true"></i>
+              <i class="icon-pencil" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="events" class="events">
+          <a class="temp" href="/pages/events.html">
+            <h1>Events</h1>
+            <div class="shell">
+              <i class="icon-calendar" aria-hidden="true"></i>
+              <i class="icon-clock" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="about" class="about">
+          <a class="temp" href="/pages/about.html">
+            <h1>About</h1>
+            <div class="shell">
+              <i class="icon-information" aria-hidden="true"></i>
+              <i class="icon-address-card-o" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+        <div id="contact" class="contact">
+          <a class="temp" href="/pages/contact.html">
+            <h1>Contact</h1>
+            <div class="shell">
+              <i class="icon-phone2" aria-hidden="true"></i>
+              <i class="icon-map" aria-hidden="true"></i>
+              <i class="icon-envelope-o" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="close">
+        <label class="chevron" for="show-menu">
+          <svg class="chevron"><use xlink:href="/assets/icons.svg#chevron-up"></use></svg>
+        </label>
+      </div>
+        <!-- <label class="close" for="show-menu">X</label> -->
+  </div>
+
+  <nav id="main-nav" class="main">
+    <label class="menu" for="show-menu">
+      <svg class="navicon"><use xlink:href="/assets/icons.svg#navicon"></use></svg>
+      MENU</label>
+  </nav>
+
+  <!--end-drop down menu  -->
+
+  <!-- optimizing CSS (Google's Page-Speed-Tools)-->
+
+
+  <noscript id="deferred-styles">
+
+    <link rel="stylesheet" href="/css/drop-menu.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
+
+  </noscript>
+  <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function() {
+      window.setTimeout(loadDeferredStyles, 0);
+    });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+    <!-- end-optimizing-CSS -->
+
+
   <!--back to top button  -->
   <a href="#topPage" title="Top-of-Page" id="topButton" class="bottomMenu hide"><svg class="top"><use xlink:href="../assets/icons.svg#chevron-up"></use></svg></a>
 
@@ -672,10 +805,14 @@
   </script>
 
   <!-- Needed for svgs to work in Internet Explorer -->
+
+  <!--[if IE]>
   <script src="/svg4everybody.js"></script>
   <script>
     svg4everybody();
   </script>
+  <![endif]-->
+
 
 
 </body>
