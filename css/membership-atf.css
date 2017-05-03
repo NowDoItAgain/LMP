@@ -1,5 +1,6 @@
 html {
   font-family: "Lato", sans-serif;
+  /*this font-hack makes the font responsive with a max & min*/
   font-size: calc(9.5px + .272vw);
 }
 
@@ -77,14 +78,14 @@ div.social {
   margin-right: 3rem;
 }
 
+a.social {
+  font-size: 1.5rem;
+}
+
 a.social:hover {
   color: rgba(250, 59, 46, 0.9);
 }
 
-svg.social {
-  height: 1.4rem;
-  width: 1.4rem;
-}
 
 h1.logo {
   /*position: fixed;

@@ -19,40 +19,39 @@
 
   <link rel="stylesheet" href="/css/products-page.css">
 
-  <!-- <link rel="stylesheet" href="/css/drop-menu.css"> -->
-  <!-- fonts -->
-  <!-- <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet"> -->
-  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+
 </head>
 
 <body id="topPage">
 
-  <!-- javascript write-in was changed to php include -->
-  <!-- <script id="pages-menuscript" src="/drop-menu.js"></script> -->
-
-  <!-- <?php require $_SERVER['DOCUMENT_ROOT'] ."/assets/drop-menu.php"; ?> -->
-
-
   <header>
-    <a href="/index.html" class="home"><h1 class="logo" title="Distributor # 2831347">Lil&nbsp;Miss&nbsp;Pure</h1></a>
-    <div class="social">
-      <a href="https://www.facebook.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Facebook"><svg class="social"><use xlink:href="/assets/icons.svg#fa-facebook"></use></svg></a>
-      <a href="https://www.pinterest.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Pinterest"><svg class="social"><use xlink:href="/assets/icons.svg#fa-pinterest"></use></svg></a>
-    </div>
+      <a href="/index.html" class="home"><h1 class="logo" title="Distributor # 2831347">Lil&nbsp;Miss&nbsp;Pure</h1></a>
+      <div class="social">
+          <a href="https://www.facebook.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Facebook">
+            <i class="icon-facebook"></i>
+          </a>
+          <a href="https://www.pinterest.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Pinterest">
+            <i class="icon-pinterest-p"></i>
+          </a>
+      </div>
   </header>
 
-  <div class="side">
-    <nav class="pagenav">
-      <a href="#starter-kits" class="pagenav">Starter Kits</a>
-      <a href="#essential-oils" class="pagenav">Essential Oils</a>
-      <a href="#blends" class="pagenav">Blends</a>
-      <a href="#for-home" class="pagenav">For the Home</a>
-      <a href="#personal-products" class="pagenav">Personal</a>
-      <a href="#catalogs" class="pagenav">Young Living Catalogs</a>
-      <a href="https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" title="Go to Young Living's Registration Page" target="_blank" class="signup">Sign-Up</a>
-
-    </nav>
+  <div class="abs scrollable">
+    <div class="sidebar scrollable">
+      <div class="hide-scrollbar">
+        <nav class="pagenav">
+          <a href="#starter-kits" class="pagenav">Starter Kits</a>
+          <a href="#essential-oils" class="pagenav">Essential Oils</a>
+          <a href="#blends" class="pagenav">Blends</a>
+          <a href="#for-home" class="pagenav">For the Home</a>
+          <a href="#personal-products" class="pagenav">Personal</a>
+          <a href="#catalogs" class="pagenav">Young Living Catalogs</a>
+          <a href="https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" title="Go to Young Living's Registration Page" target="_blank" class="signup">Sign-Up</a>
+        </nav>
+      </div>
+    </div>
   </div>
+
 
   <div class="main-image">
     <div class="display">
@@ -66,7 +65,6 @@
 
 
   <section class="instrux">
-
 
     <div class="compare">
       <h1>Explanation of Membership &amp; Retail</h1>
@@ -653,7 +651,16 @@
 
   </section>
 
-
+  <footer>
+    <div class="footwrap">
+      <div class="copy">&copy; 2017 Lil' Miss Pure</div>
+      <div class="credit">Site Development: Benjamin Faught</div>
+      <div class="social-foot">
+        <a href="https://www.facebook.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-facebook"></i></a>
+        <a href="https://www.pinterest.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-pinterest-p"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <!--drop down menu  -->
   <input type="checkbox" id="show-menu">
@@ -803,6 +810,8 @@
     };
     window.addEventListener("scroll", myScrollFunc);
   </script>
+
+
 
   <!-- Needed for svgs to work in Internet Explorer -->
 

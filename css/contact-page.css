@@ -1,5 +1,7 @@
 html {
   font-family: "Lato", sans-serif;
+  /*this font-hack makes the font responsive with a max & min*/
+  font-size: calc(9.5px + .272vw);
 }
 
 header {
@@ -41,13 +43,12 @@ div.social {
   margin-right: 3rem;
 }
 
-a.social:hover {
-  color: rgba(250, 59, 46, 0.9);
+a.social {
+  font-size: 1.5rem;
 }
 
-svg.social {
-  height: 1.4rem;
-  width: 1.4rem;
+a.social:hover {
+  color: rgba(250, 59, 46, 0.9);
 }
 
 h1.logo {
@@ -77,8 +78,8 @@ div.temp {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   font-size: 6rem;
 }
 
@@ -91,10 +92,37 @@ footer {
   padding-left: 4rem;
 }
 
-footer a {
-  text-decoration: underline;
+/*footer*/
+
+footer {
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  color: #665;
 }
 
-header > a {
-  margin-right: 2rem;
+a.social-link {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+div.footwrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, .25);
+  padding: 1.25rem 0 1.25rem 0;
+}
+
+div.copy {
+  padding-left: 1rem;
+}
+
+
+div.credit a {
+  text-decoration: underline;
 }

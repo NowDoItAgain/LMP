@@ -21,33 +21,34 @@ section.atf {
 header.logo{
   display: flex;
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: flex-start;
   position: fixed;
   top: 1rem;
   right: 1rem;
   /*border: 1px solid pink;*/
-  width: 25rem;
-  height: 5rem;
+  width: 30rem;
+  height: 8rem;
 }
 
 div.social {
   /*width: 10rem;*/
   display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  /*justify-content: space-between;*/
   align-items: flex-end;
   color: rgba(198, 54, 44, .9);
   /*border: 1px solid pink;*/
-  height: 4rem;
+  /*height: 4rem;*/
 }
 
 a.social:hover {
   color: rgba(250, 59, 46, 0.9);
 }
 
-svg.social {
-  height: 1.6rem;
-  width: 1.6rem;
+a.social {
+  display: block;
+  font-size: 2.7rem;
+  margin: .5rem 1.5rem 0 0;
 }
 
 h1.logo {
@@ -56,6 +57,7 @@ h1.logo {
   right: 1rem;*/
   /*display: inline-block;*/
   font-family: 'Allura', 'Garamond', cursive;
+  /*align-self: center;*/
   /*letter-spacing: .135rem;*/
   text-align: center;
   font-size: 3.15rem;

@@ -125,7 +125,8 @@ svg.close {
 #dropdown {
     /* toggle */
     position: fixed;
-    top: -100vh;
+    top: -200vh;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,16 +222,22 @@ div.shell {
     width: 80%;
 }
 
-
+div.shell i.icon-envelope-o,
 div.shell i.icon-address-card-o {
-  font-size: 12rem;
+  padding-top: 2rem;
+  font-size: 9rem;
+}
+
+div.shell i.icon-key {
+  padding-top: 2rem;
+  font-size: 9rem;
   color: inherit;
   /*decreases stroke for fontawesome*/
   /*-webkit-text-stroke: 3px rgba(235, 235, 235, 0.95);*/
 }
 
 div.shell i {
-  font-size: 12rem;
+  font-size: 11rem;
   color: inherit;
   margin: 1rem 2rem 2rem 2rem;
 }

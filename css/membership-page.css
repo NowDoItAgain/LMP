@@ -464,19 +464,40 @@ div.list i {
 
 /*end-testing*************************************************************/
 
+/*footer*/
+
 footer {
-  font-size: .9rem;
+  font-size: .8rem;
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 5vh;
   width: 100%;
-  padding-left: 4rem;
+  color: #665;
 }
 
-footer a {
+a.social-link {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+div.footwrap {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  /*border-top: 1px solid rgba(0, 0, 0, .25);*/
+  padding: 1.25rem 0 1.25rem 0;
+}
+
+div.copy {
+  padding-left: 1rem;
+}
+
+
+div.credit a {
   text-decoration: underline;
 }
-
 
 
 /*back-to-top button*/
