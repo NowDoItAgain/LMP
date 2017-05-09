@@ -1,0 +1,245 @@
+/*phone*/
+@media screen and (max-width: 600px)
+{
+  div.menu {
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: space-between;*/
+    /*overflow: hidden;*/
+    height: 85%;
+    width: 95%;
+    background-color: rgba(235, 235, 235, 1);
+    border-radius: .25rem;
+    /*overflow-y: auto;*/
+  }
+
+  div.menu > label {
+    font-size: 1.10rem;
+  }
+
+  div.skin {
+    display: flex;
+    flex-flow: column;
+    /*justify-content: space-between;*/
+
+    align-items: center;
+    position: relative;
+    width: 25%;
+    height: 100%;
+  }
+
+  div.products,
+  div.membership,
+  div.learn,
+  div.events,
+  div.about,
+  div.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 75%;
+    height: 100%;
+    left: -100%;
+    background-color:  #ccc;
+  }
+
+
+  a.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: rgba(163, 161, 161, 1);
+    /*border: 1px solid hotpink;*/
+  }
+
+
+  label[for="show-products"],
+  label[for="show-learn"], label[for="show-events"], label[for="show-about"], label[for="show-membership"], label[for="show-contact"] {
+    width: 100%;
+    height: 12.5%;
+    font-size: 2.2rem;
+  }
+
+label[for="show-menu"] {
+  width: 100%;
+  height: 12.5%;
+}
+
+
+  div.menu-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: 100%;
+    background-color: #ccc;
+    /*border: 1px solid blue;*/
+  }
+
+  a.temp {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: .5rem;
+    height: 95%;
+    /*height: 100%;*/
+    width: 90%;
+    font-size: 2rem;
+    color: rgba(250, 59, 46, 1);
+    padding: 1rem 0;
+    background-color: #ccc;
+    /*color: #ddd;*/
+  }
+
+
+
+  a.temp h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 1rem 0 2rem 0;*/
+    font-size: 3.5rem;
+    /*font-weight: bold;*/
+    height: 25%;
+    /*border: 1px solid grey;*/
+  }
+
+  div.shell {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      /*margin: 1rem 2rem 2rem 2rem;*/
+      /*padding-bottom: 4rem;*/
+      width: 90%;
+      height: 75%;
+      /*border: 1px solid grey;*/
+  }
+
+  div.shell i.icon-envelope-o,
+  div.shell i.icon-address-card-o {
+    padding-top: 2rem;
+    font-size: 7rem;
+  }
+
+  div.shell i.icon-key {
+    padding-top: 2rem;
+    font-size: 7rem;
+    color: inherit;
+    /*decreases stroke for fontawesome*/
+    /*-webkit-text-stroke: 3px rgba(235, 235, 235, 0.95);*/
+  }
+
+  div.shell i {
+    font-size: 9rem;
+    color: inherit;
+    margin: 1rem 2rem 2rem 2rem;
+  }
+
+  label.chevron {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    color: rgba(255, 255, 255, 0.95);
+    height: 3rem;
+    width: 5rem;
+    margin-bottom: .5rem;
+  }
+
+  svg.home {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  svg.close {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  div.shell i {
+    font-size: 8rem;
+    color: inherit;
+    padding: .25rem;
+    /*margin: 1rem 2rem 2rem 2rem;*/
+  }
+
+  div.shell i.icon-information {
+    font-size: 13rem;
+    color: inherit;
+  }
+
+  div.shell i.icon-user
+  {
+    font-size: 10rem;
+    color: inherit;
+  }
+
+  div.shell i.icon-key {
+    padding-top: 1rem;
+    font-size: 7rem;
+    color: inherit;
+    /*decreases stroke for fontawesome*/
+    /*-webkit-text-stroke: 3px rgba(235, 235, 235, 0.95);*/
+  }
+
+  nav.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    padding: 0 0 0 1rem;
+    display: flex;
+    height: 4rem;
+    justify-content: flex-start;
+    align-items: center;
+    height: 4rem;
+    z-index: 3;
+    /*border: 1px solid pink;*/
+  }
+
+  label.menu {
+    cursor: pointer;
+    /*font-size: 1.75rem;*/
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width 100%;
+    height: 4rem;
+    padding: 1rem 0 0 0;
+    z-index: 5;
+    /*margin: 1rem 1rem;*/
+    font-family: 'Lato', sans-serif;
+    padding: 0 0 0 0;
+    color: rgba(198, 54, 44, 1);
+    font-weight: bold;
+    font-size: 1.7rem;
+    width: 8rem;
+    /*border: 1px solid pink;*/
+  }
+
+
+  .navicon {
+    /*border: 1px solid pink;*/
+    /*display: inline-block;*/
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: rgb(198, 54, 44,);
+    margin-right: .3rem;
+    /*padding: 1.5rem 1rem 0 1rem;*/
+    /*color: black;*/
+  }
+
+  label.menu:hover {
+    color: rgba(250, 59, 46, 0.9);
+  }
+
+}

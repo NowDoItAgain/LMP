@@ -179,17 +179,7 @@ div.display {
   background-size: 50% 50%;
   background-repeat: no-repeat;
   margin-bottom: 2rem;
-  /*background:
-    radial-gradient(circle at top left,
-               transparent 2rem, #F6E7D2 0) top left,
-    radial-gradient(circle at top right,
-               transparent 2rem, #F6E7D2 0) top right,
-    radial-gradient(circle at bottom right,
-               transparent 2rem, #F6E7D2 0) bottom right,
-    radial-gradient(circle at bottom left,
-               transparent 2rem, #F6E7D2 0) bottom left;
-               background-size: 50.5% 50.5%;
-               background-repeat: no-repeat;*/
+
 }
 
 div.heading {

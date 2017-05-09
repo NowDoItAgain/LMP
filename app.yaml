@@ -1,12 +1,7 @@
-application: lmpdev-162920
-version: 1
 runtime: go
 api_version: go1
 
 handlers:
-
-#cache control
-#- url: /photos
 #static_dir: photos
 #expiration: "8d 0m"
 

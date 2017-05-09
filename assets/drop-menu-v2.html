@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--drop down menu v.2  -->
+
+<input type="checkbox" id="show-menu">
+<div id="dropdown" class="layer">
+
+    <div class="menu">
+
+      <input name="menulist" type="radio" id="show-products" checked="checked">
+      <input name="menulist" type="radio" id="show-membership">
+      <input name="menulist" type="radio" id="show-learn">
+      <input name="menulist" type="radio" id="show-events">
+      <input name="menulist" type="radio" id="show-about">
+      <input name="menulist" type="radio" id="show-contact">
+
+      <div class="skin">
+
+        <a class="home" href="/index.html">
+          <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>
+        </a>
+
+        <label id"products-tab" for="show-products">Products</label>
+        <label id"" for="show-membership">Membership</label>
+        <label id"" for="show-learn">Learn</label>
+        <label id"" for="show-events">Events</label>
+        <label id"" for="show-about">About</label>
+        <label id"" for="show-contact">Contact</label>
+
+        <label class="close" for="show-menu">
+          <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>
+        </label>
+
+      </div>
+
+
+      <div id="products" class="products">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/products.html">
+              <h1>Products</h1>
+              <div class="shell">
+                <i class="icon-gift" aria-hidden="true"></i>
+                <i class="icon-sale" aria-hidden="true"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div id="membership" class="membership">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/membership.html">
+              <h1>Membership</h1>
+              <div class="shell">
+                <i class="icon-user" aria-hidden="true"></i>
+                <i class="icon-key" aria-hidden="true"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div id="learn" class="learn">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/learn.html">
+              <h1>Learn</h1>
+              <div class="shell">
+                <i class="icon-lightbulb" aria-hidden="true"></i>
+                <i class="icon-pencil" aria-hidden="true"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div id="events" class="events">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/events.html">
+              <h1>Events</h1>
+              <div class="shell">
+                <i class="icon-calendar" aria-hidden="true"></i>
+                <i class="icon-clock" aria-hidden="true"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/about.html">
+              <h1>About</h1>
+              <div class="shell">
+                <i class="icon-information" aria-hidden="true"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/contact.html">
+              <h1>Contact</h1>
+              <div class="shell">
+                <i class="icon-phone2" aria-hidden="true"></i>
+                <i class="icon-map" aria-hidden="true"></i>
+              </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="close">
+      <label class="chevron" for="show-menu">
+        <svg class="chevron"><use xlink:href="/assets/icons.svg#chevron-up"></use></svg>
+      </label>
+    </div>
+      <!-- <label class="close" for="show-menu">X</label> -->
+</div>
+
+
+<nav id="main-nav" class="main">
+  <label class="menu" for="show-menu">
+    <svg class="navicon"><use xlink:href="/assets/icons.svg#navicon"></use></svg>
+    MENU</label>
+</nav>
+
+<!--end-drop down menu  -->
