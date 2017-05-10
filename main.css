@@ -161,3 +161,50 @@ a.main:hover {
   /*text-decoration: underline;*/
   color: #E35743;
 }
+
+nav.main {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  height: 4rem;
+  z-index: 3;
+  width: 10rem;
+}
+
+nav.main > label.menu {
+  cursor: pointer;
+  font-size: 1.75rem;
+  /*position: relative;*/
+  display: flex;
+  flex-wrap: nowrap;
+  /*top: 0;*/
+  /*left: 0;*/
+  z-index: 3;
+  /*margin: 1rem 1rem;*/
+  font-family: 'Lato', sans-serif;
+  padding: 1.5rem 1rem 0 1rem;
+  color: rgba(198, 54, 44, 1);
+  font-weight: bold;
+  font-size: 1.4rem;
+  width: 10rem;
+  /*border: 1px solid pink;*/
+}
+
+
+label.menu > svg.navicon {
+  /*border: 1px solid pink;*/
+  display: block;
+  z-index: 3;
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: rgb(198, 54, 44,);
+  margin-right: .3rem;
+  /*padding: 1.5rem 1rem 0 1rem;*/
+  /*color: black;*/
+}
+
+label.menu:hover {
+  color: rgba(250, 59, 46, 0.9);
+}
