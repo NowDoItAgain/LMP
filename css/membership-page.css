@@ -31,7 +31,9 @@ div.blocks {
   border: .1rem solid rgba(198, 54, 44, .8);
   border-radius: 1rem;
   width: 85%;
+  /*width: 95%;*/
   padding: 3rem;
+  /*padding: .5rem;*/
   /*margin-top: 13rem;*/
   min-height: 15rem;
 }
@@ -54,11 +56,13 @@ div.over {
   position: absolute;
   z-index: 1;
   top: -1.5rem;
+  /*left: 3rem;*/
   left: 7rem;
   padding: 0 1.25rem;
 }
 
 div.over h1 {
+  /*font-size: 2.8rem;*/
   font-size: 3.3rem;
   color: rgba(198, 54, 44, .9);
   font-family: 'Garamond', serif;
@@ -68,9 +72,11 @@ section.subjects p {
   font-family: 'Raleway', sans-serif;
   font-size: 1.3rem;
   padding: 1.1rem;
+  /*padding: .5rem;*/
   margin: 0 2rem;
   color: #665;
   line-height: 1.35;
+  /*width: 100%;*/
   width: 80%;
 }
 
@@ -483,6 +489,7 @@ a.social-link {
 }
 
 div.footwrap {
+  /*width: 100%;*/
   width: 70%;
   display: flex;
   justify-content: space-between;
@@ -499,8 +506,10 @@ div.credit a {
   text-decoration: underline;
 }
 
+/*end-footer*****/
 
-/*back-to-top button*/
+
+/*back-to-top button*****/
 
 svg.top {
   fill: #fff;
@@ -515,8 +524,10 @@ svg.top {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 1rem;
-  right: 3rem;
+  /*bottom: 1rem;*/
+  bottom: 3.3rem;
+  /*right: 3rem;*/
+  right: 1rem;
   width: 3rem;
   height: 3rem;
   box-shadow: 0 2px #b3b3b3;
@@ -537,4 +548,73 @@ svg.top {
 .show {
   opacity: 1;
   /*left: 0;*/
+}
+
+/*phone*/
+@media screen and (max-width: 600px) {
+
+  /*below-the-fold*/
+    section.btf {
+      margin: 0 0;
+    }
+
+    div.blocks {
+      width: 95%;
+    }
+
+    div.over {
+      left: 3rem;
+    }
+
+    div.over h1 {
+      font-size: 2.8rem;
+    }
+
+    section.subjects p {
+      padding: .5rem;
+      width: 100%;
+      margin: 0 0;
+    }
+
+    section.member, section.retail {
+      margin: 0 0 2.5rem 0;
+    }
+
+    a.sk:hover img.sk {
+      display: none;
+    }
+
+    a.support {
+      border: .5px solid rgba(198, 54, 44, .9);
+      font-size: 1.25rem;
+    }
+
+    span.name {
+      font-family: 'Garamond', serif;
+      font-size: 1.8rem;
+    }
+
+    div.list span.lil {
+      font-family: 'Allura', 'Garamond', cursive;
+      font-size: 1.9rem;
+    }
+
+    div.list i {
+      font-size: 2.4rem;
+      padding-left: 1rem;
+    }
+
+    /*footer*/
+
+    div.footwrap {
+      width: 100%;
+    }
+
+    .bottomMenu {
+      bottom: 3.3rem;
+      right: 1rem;
+    }
+
+
+
 }

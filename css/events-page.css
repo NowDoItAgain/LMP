@@ -343,4 +343,13 @@ div.credit a {
     width: 95%;
   }
 
+  div.footwrap {
+    width: 100%;
+  }
+
+  .bottomMenu {
+    bottom: 3.3rem;
+    right: 1rem;
+  }
+
 }

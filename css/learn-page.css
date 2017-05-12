@@ -138,6 +138,31 @@ div.temp {
   font-size: 6rem;
 }
 
+/*facebook*/
+
+label[for="show-facebook"] {
+  cursor: pointer;
+}
+
+div.fb-page {
+  display: none;
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  /*width: 30vh;*/
+  /*height: 60vh;*/
+  /*default width: 340px;*/
+  /*default height: 500px;*/
+}
+
+
+input[id="show-facebook"]:checked ~ #facebook {
+    /* toggle */
+    display: block;
+}
+
+
+
 /*footer*/
 
 footer {

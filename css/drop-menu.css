@@ -148,7 +148,7 @@ svg.close {
     transition-property: all;
     transition-timing-function: ease;
     transition-duration: .35s;
-    z-index: 2;
+    z-index: 5;
 }
 
 
@@ -175,7 +175,7 @@ svg.chevron {
   width: 3rem;
 }
 
-input[type="checkbox"]:checked ~ #dropdown {
+input[id="show-menu"]:checked ~ #dropdown {
     /* toggle */
     top: 0;
 }
@@ -442,10 +442,12 @@ input#show-contact[type="radio"]:checked ~ #contact {
     height: 1.6rem;
     width: 1.6rem;
   }
+
   svg.home {
     height: 1.6rem;
     width: 1.6rem;
   }
+
 }
 
 

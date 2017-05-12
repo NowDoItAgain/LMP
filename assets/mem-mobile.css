@@ -1,0 +1,114 @@
+/*phone*/
+@media screen and (max-width: 600px) {
+
+/*above-the-fold*/
+  nav.page-nav {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5px;
+  }
+
+  nav.page-nav a {
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05), inset 0 2.5px 15px rgba(0, 0, 0, 0.3);
+      margin-bottom: 5px;
+  }
+
+  div.display {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  section.atf {
+    margin: 4rem 0 0 0;
+    padding-top: 3.5rem;
+  }
+
+  div.display {
+    width: 100%;
+  }
+
+  div.heading {
+    padding: 0 0;
+  }
+
+  h1.main {
+    font-size: 2.9rem;
+  }
+
+  h1.yl {
+    font-size: 2.8
+  }
+
+  h2.main {
+
+  }
+
+  svg.visual {
+    height: 5rem;
+    width: 5rem;
+    margin: 0 1rem;
+  }
+
+  div.card {
+    width: 45%;
+    margin: .5rem .25rem;
+  }
+
+  div.wrap {
+    height: 40vh;
+  }
+
+/*below-the-fold*/
+  section.btf {
+    margin: 0 0;
+  }
+
+
+  div.blocks {
+    width: 95%;
+  }
+
+  div.over {
+    left: 3rem;
+  }
+
+  div.over h1 {
+    font-size: 2.8rem;
+  }
+
+  section.subjects p {
+    padding: .5rem;
+    width: 100%;
+    margin: 0 0;
+  }
+
+  section.member, section.retail {
+    margin: 0 0 2.5rem 0;
+  }
+
+  a.sk:hover img.sk {
+    display: none;
+  }
+
+  a.support {
+    border: .5px solid rgba(198, 54, 44, .9);
+    font-size: 1.25rem;
+  }
+
+  span.name {
+    font-family: 'Garamond', serif;
+    font-size: 1.8rem;
+  }
+
+  div.list span.lil {
+    font-family: 'Allura', 'Garamond', cursive;
+    font-size: 1.9rem;
+  }
+
+  div.list i {
+    font-size: 2.4rem;
+    padding-left: 1rem;
+  }
+
+}
