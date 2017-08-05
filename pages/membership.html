@@ -7,6 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <meta http-equiv="Cache-control" content="public" max-age="604800"> -->
   <title>Products, Lil Miss Pure, essential oils, diffusers, &amp; much more</title>
+  <!-- posting links (Open Graph protocol) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LilMissPure-Membership" />
+  <meta property="og:url" content="http://lilmisspure.com/pages/membership.html" />
+  <meta property="og:description" content="Young Living Essential Oils, Distiributor # 2831347, Bartlett, TN" />
+  <meta property="og:image" content="http://lilmisspure.com/photos/membership/member-link-640x427.jpg" />
   <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="../Pure-favicons-thick/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="../Pure-favicons-thick/favicon-32x32.png" sizes="32x32">
@@ -27,35 +33,42 @@
 
 
   <!-- header v2**** -->
-    <header>
-        <nav id="main-nav" class="main">
-          <label class="menu" for="show-menu">
+  <header>
+    <nav id="main-nav" class="main">
+      <label class="menu" for="show-menu">
             <svg class="navicon"><use xlink:href="/assets/icons.svg#navicon"></use></svg>
             MENU</label>
-        </nav>
-        <a href="/index.html" class="gohome"><h1 class="logo" title="Distributor # 2831347">Lil&nbsp;Miss&nbsp;Pure</h1></a>
-        <div class="social">
-            <a href="https://www.facebook.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Facebook">
+    </nav>
+    <a href="/index.html" class="gohome"><h1 class="logo" title="Distributor # 2831347">Lil&nbsp;Miss&nbsp;Pure</h1></a>
+    <div class="social">
+      <a href="https://www.facebook.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Facebook">
               <i class="icon-facebook"></i>
             </a>
-            <a href="https://www.pinterest.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Pinterest">
+      <a href="https://www.pinterest.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Pinterest">
               <i class="icon-pinterest-p"></i>
             </a>
-        </div>
-    </header>
+    </div>
+  </header>
 
-  <div class="nav">
-    <nav class="page-nav">
-      <a href="/pages/membership.html#introduction" class="nav">Introduction</a>
-      <a href="/pages/membership.html#save" class="nav">Savings &amp; Earnings</a>
-      <a href="/pages/membership.html#rewards" class="nav">Rewards</a>
-      <a href="/pages/membership.html#experiences" class="nav">Experiences</a>
-      <a href="/pages/membership.html#support" class="nav">Support</a>
-      <a href="https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" title="Go to Young Living's Registration Page" target="_blank" class="nav sign-up">Sign-Up</a>
-    </nav>
+  <input type="checkbox" id="m-s-menu">
+  <div id="mside-menu" class="nav">
+    <label id="msbutton" class="membership-side-menu" for="m-s-menu">
+        <!-- <i class="icon-chevron-right" aria-hidden="true"></i> -->
+        <svg class="right"><use xlink:href="../assets/icons.svg#chevron-up"></use></svg>
+    </label>
+    <div class="sidebar">
+      <nav class="page-nav">
+        <a onclick="hide()" href="/pages/membership.html#introduction" class="nav">Introduction</a>
+        <a onclick="hide()" href="/pages/membership.html#save" class="nav">Savings &amp; Earnings</a>
+        <a onclick="hide()" href="/pages/membership.html#rewards" class="nav">Rewards</a>
+        <a onclick="hide()" href="/pages/membership.html#experiences" class="nav">Experiences</a>
+        <a onclick="hide()" href="/pages/membership.html#support" class="nav">Support</a>
+        <a onclick="hide()" href="https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" title="Go to Young Living's Registration Page" target="_blank" class="nav sign-up">Sign-Up</a>
+      </nav>
+    </div>
   </div>
 
-  <!-- testing -->
+
 
   <section class="atf">
 
@@ -325,7 +338,7 @@
 
         <h2>The Young Living Opportunity</h2>
         <div class="vidembed yl-video">
-          <iframe class="video" src="https://www.youtube.com/embed/xPRsnmPLxzM" frameborder="0" allowfullscreen></iframe>
+          <iframe class="video" src="https://www.youtube.com/embed/N8L1SgtYM4I" frameborder="0" allowfullscreen></iframe>
         </div>
 
         <h2>Resources</h2>
@@ -357,16 +370,12 @@
   </section>
 
 
-
-
-
-  <!-- end-testing -->
-
-
   <footer>
     <div class="footwrap">
       <div class="copy">&copy; 2017 Lil' Miss Pure</div>
-      <div class="credit"><div class="credit">Site Development: Benjamin Faught</div></div>
+      <div class="credit">
+        <div class="credit">Site Development: Benjamin Faught</div>
+      </div>
       <div class="social-foot">
         <a href="https://www.facebook.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-facebook"></i></a>
         <a href="https://www.pinterest.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-pinterest-p"></i></a>
@@ -379,16 +388,130 @@
   <!-- optimizing CSS (Google's Page-Speed-Tools)-->
 
 
+
+
+  <!--drop down menu v.2  -->
+
+  <input type="checkbox" id="show-menu">
+  <div id="dropdown" class="layer">
+
+    <div class="menu">
+
+      <input name="menulist" type="radio" id="show-products" checked="checked">
+      <input name="menulist" type="radio" id="show-membership">
+      <input name="menulist" type="radio" id="show-learn">
+      <input name="menulist" type="radio" id="show-events">
+      <input name="menulist" type="radio" id="show-about">
+      <input name="menulist" type="radio" id="show-contact">
+
+      <div class="skin">
+
+        <a class="home" href="/index.html">
+              <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>
+            </a>
+
+        <label id "products-tab" for="show-products">Products</label>
+        <label id "" for="show-membership">Membership</label>
+        <label id "" for="show-learn">Learn</label>
+        <label id "" for="show-events">Events</label>
+        <label id "" for="show-about">About</label>
+        <label id "" for="show-contact">Contact</label>
+
+        <label class="close" for="show-menu">
+              <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>
+            </label>
+
+      </div>
+
+
+      <div id="products" class="products">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/products.html">
+            <h1>Products</h1>
+            <div class="shell">
+              <i class="icon-gift" aria-hidden="true"></i>
+              <i class="icon-sale" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="membership" class="membership">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/membership.html">
+            <h1>Membership</h1>
+            <div class="shell">
+              <i class="icon-user" aria-hidden="true"></i>
+              <i class="icon-key" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="learn" class="learn">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/learn.html">
+            <h1>Learn</h1>
+            <div class="shell">
+              <i class="icon-lightbulb" aria-hidden="true"></i>
+              <i class="icon-pencil" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="events" class="events">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/events.html">
+            <h1>Events</h1>
+            <div class="shell">
+              <i class="icon-calendar" aria-hidden="true"></i>
+              <i class="icon-clock" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/about.html">
+            <h1>About</h1>
+            <div class="shell">
+              <i class="icon-information" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/contact.html">
+            <h1>Contact</h1>
+            <div class="shell">
+              <i class="icon-phone2" aria-hidden="true"></i>
+              <i class="icon-map" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="close">
+      <label class="chevron" for="show-menu">
+            <svg class="chevron"><use xlink:href="/assets/icons.svg#chevron-up"></use></svg>
+          </label>
+    </div>
+    <!-- <label class="close" for="show-menu">X</label> -->
+  </div>
+
+  <!--end-drop down menu  -->
+
   <noscript id="deferred-styles">
 
-    <link rel="stylesheet" href="/css/membership-page.css">
-    <link rel="stylesheet" href="/css/drop-menu.css">
-      <link rel="stylesheet" media="(max-width: 600px)" href="/assets/drop-menu-phone.css">
-    <!-- fonts -->
-    <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
+      <link rel="stylesheet" href="/css/membership-page.css">
+      <link rel="stylesheet" href="/css/drop-menu.css">
+        <link rel="stylesheet" media="(max-width: 1100px)" href="/assets/drop-menu-phone.css">
+      <!-- fonts -->
+      <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
+      <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
 
-  </noscript>
+    </noscript>
   <script>
     var loadDeferredStyles = function() {
       var addStylesNode = document.getElementById("deferred-styles");
@@ -404,121 +527,14 @@
     });
     else window.addEventListener('load', loadDeferredStyles);
   </script>
-    <!-- end-optimizing-CSS -->
+  <!-- end-optimizing-CSS -->
 
-    <!--drop down menu v.2  -->
-
-    <input type="checkbox" id="show-menu">
-    <div id="dropdown" class="layer">
-
-        <div class="menu">
-
-          <input name="menulist" type="radio" id="show-products" checked="checked">
-          <input name="menulist" type="radio" id="show-membership">
-          <input name="menulist" type="radio" id="show-learn">
-          <input name="menulist" type="radio" id="show-events">
-          <input name="menulist" type="radio" id="show-about">
-          <input name="menulist" type="radio" id="show-contact">
-
-          <div class="skin">
-
-            <a class="home" href="/index.html">
-              <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>
-            </a>
-
-            <label id"products-tab" for="show-products">Products</label>
-            <label id"" for="show-membership">Membership</label>
-            <label id"" for="show-learn">Learn</label>
-            <label id"" for="show-events">Events</label>
-            <label id"" for="show-about">About</label>
-            <label id"" for="show-contact">Contact</label>
-
-            <label class="close" for="show-menu">
-              <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>
-            </label>
-
-          </div>
-
-
-          <div id="products" class="products">
-            <div class="menu-wrap">
-              <a class="temp" href="/pages/products.html">
-                  <h1>Products</h1>
-                  <div class="shell">
-                    <i class="icon-gift" aria-hidden="true"></i>
-                    <i class="icon-sale" aria-hidden="true"></i>
-                  </div>
-              </a>
-            </div>
-          </div>
-          <div id="membership" class="membership">
-            <div class="menu-wrap">
-              <a class="temp" href="/pages/membership.html">
-                  <h1>Membership</h1>
-                  <div class="shell">
-                    <i class="icon-user" aria-hidden="true"></i>
-                    <i class="icon-key" aria-hidden="true"></i>
-                  </div>
-              </a>
-            </div>
-          </div>
-          <div id="learn" class="learn">
-            <div class="menu-wrap">
-              <a class="temp" href="/pages/learn.html">
-                  <h1>Learn</h1>
-                  <div class="shell">
-                    <i class="icon-lightbulb" aria-hidden="true"></i>
-                    <i class="icon-pencil" aria-hidden="true"></i>
-                  </div>
-              </a>
-            </div>
-          </div>
-          <div id="events" class="events">
-            <div class="menu-wrap">
-              <a class="temp" href="/pages/events.html">
-                  <h1>Events</h1>
-                  <div class="shell">
-                    <i class="icon-calendar" aria-hidden="true"></i>
-                    <i class="icon-clock" aria-hidden="true"></i>
-                  </div>
-              </a>
-            </div>
-          </div>
-          <div id="about" class="about">
-            <div class="menu-wrap">
-              <a class="temp" href="/pages/about.html">
-                  <h1>About</h1>
-                  <div class="shell">
-                    <i class="icon-information" aria-hidden="true"></i>
-                  </div>
-              </a>
-            </div>
-          </div>
-          <div id="contact" class="contact">
-            <div class="menu-wrap">
-              <a class="temp" href="/pages/contact.html">
-                  <h1>Contact</h1>
-                  <div class="shell">
-                    <i class="icon-phone2" aria-hidden="true"></i>
-                    <i class="icon-map" aria-hidden="true"></i>
-                  </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="close">
-          <label class="chevron" for="show-menu">
-            <svg class="chevron"><use xlink:href="/assets/icons.svg#chevron-up"></use></svg>
-          </label>
-        </div>
-          <!-- <label class="close" for="show-menu">X</label> -->
-    </div>
-
-    <!--end-drop down menu  -->
-
-
+  <!-- toggle checkbox -->
+  <script type="text/javascript">
+    function hide() {
+      document.getElementById('m-s-menu').checked = false;
+    }
+  </script>
 
   <!-- back to top script -->
   <script type="text/javascript" name="top">

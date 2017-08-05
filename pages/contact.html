@@ -16,15 +16,13 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="/css/mcleod-reset.css">
-    <link rel="stylesheet" href="/css/drop-menu.css">
-      <link rel="stylesheet" media="(max-width: 600px)" href="/assets/drop-menu-phone.css">
     <link rel="stylesheet" href="/css/contact-page.css">
-    <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
 
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
     <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 </head>
+
 
 <body>
 
@@ -65,7 +63,7 @@
   <footer>
     <div class="footwrap">
       <div class="copy">&copy; 2017 Lil' Miss Pure</div>
-      <div class="credit">Site Development: Benjamin Faught</div>
+      <div class="credit"></div>
       <div class="social-foot">
         <a href="https://www.facebook.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-facebook"></i></a>
         <a href="https://www.pinterest.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-pinterest-p"></i></a>
@@ -188,6 +186,36 @@
   </div>
 
   <!--end-drop down menu  -->
+
+  <!-- optimizing CSS (Google's Page-Speed-Tools)-->
+
+  <noscript id="deferred-styles">
+
+    <link rel="stylesheet" href="/css/drop-menu.css">
+    <link rel="stylesheet" media="(max-width: 1100px)" href="/assets/drop-menu-phone.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
+    <link rel="stylesheet" href="/fontawesome-icomoon/icomoon-LMP.css">
+
+
+
+  </noscript>
+  <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function() {
+      window.setTimeout(loadDeferredStyles, 0);
+    });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+  <!-- end-optimizing-CSS -->
 
 
 </body>

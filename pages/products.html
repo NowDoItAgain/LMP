@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Products, Lil Miss Pure, essential oils, diffusers, &amp; much more</title>
+  <!-- posting links (Open Graph protocol)-->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LilMissPure-Products" />
+  <meta property="og:url" content="http://lilmisspure.com/pages/products.html" />
+  <meta property="og:description" content="Young Living Essential Oils, Distiributor # 2831347, Bartlett, TN" />
+  <meta property="og:image" content="http://lilmisspure.com/photos/product-photos/premium-home-sk-400x267.jpg" />
   <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="../Pure-favicons-thick/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="../Pure-favicons-thick/favicon-32x32.png" sizes="32x32">
@@ -18,6 +24,7 @@
   <link rel="stylesheet" href="/css/mcleod-reset.css">
 
   <link rel="stylesheet" href="/css/products-page.css">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
 
 
 </head>
@@ -25,34 +32,43 @@
 <body id="topPage">
 
   <!-- header v2**** -->
-    <header>
-        <nav id="main-nav" class="main">
-          <label class="menu" for="show-menu">
+  <header>
+    <nav id="main-nav" class="main">
+      <label class="menu" for="show-menu">
             <svg class="navicon"><use xlink:href="/assets/icons.svg#navicon"></use></svg>
             MENU</label>
-        </nav>
-        <a href="/index.html" class="gohome"><h1 class="logo" title="Distributor # 2831347">Lil&nbsp;Miss&nbsp;Pure</h1></a>
-        <div class="social">
-            <a href="https://www.facebook.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Facebook">
+    </nav>
+    <a href="/index.html" class="gohome"><h1 class="logo" title="Distributor # 2831347">Lil&nbsp;Miss&nbsp;Pure</h1></a>
+    <div class="social">
+      <a href="https://www.facebook.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Facebook">
               <i class="icon-facebook"></i>
             </a>
-            <a href="https://www.pinterest.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Pinterest">
+      <a href="https://www.pinterest.com/LilMissPure/" class="social" target="_blank" title="Lil'MissPure on Pinterest">
               <i class="icon-pinterest-p"></i>
             </a>
-        </div>
-    </header>
+    </div>
+  </header>
 
-  <div class="abs scrollable">
+  <!-- <label id="mbutton" class="products-side-menu" for="s-menu">
+      <i class="icon-chevron-right" aria-hidden="true"></i></svg>
+  </label> -->
+
+  <input type="checkbox" id="s-menu">
+  <div id="side-menu" class="abs scrollable">
+    <label id="mbutton" class="products-side-menu" for="s-menu">
+        <!-- <i class="icon-chevron-right" aria-hidden="true"></i> -->
+        <svg class="right"><use xlink:href="../assets/icons.svg#chevron-up"></use></svg>
+    </label>
     <div class="sidebar scrollable">
       <div class="hide-scrollbar">
         <nav class="pagenav">
-          <a href="#starter-kits" class="pagenav">Starter Kits</a>
-          <a href="#essential-oils" class="pagenav">Essential Oils</a>
-          <a href="#blends" class="pagenav">Blends</a>
-          <a href="#for-home" class="pagenav">For the Home</a>
-          <a href="#personal-products" class="pagenav">Personal</a>
-          <a href="#catalogs" class="pagenav">Young Living Catalogs</a>
-          <a href="https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" title="Go to Young Living's Registration Page" target="_blank" class="signup">Sign-Up</a>
+          <a onclick="hide()" href="#starter-kits" class="pagenav">Starter Kits</a>
+          <a onclick="hide()" href="#essential-oils" class="pagenav">Essential Oils</a>
+          <a onclick="hide()" href="#blends" class="pagenav">Blends</a>
+          <a onclick="hide()" href="#for-home" class="pagenav">For the Home</a>
+          <a onclick="hide()" href="#personal-products" class="pagenav">Personal</a>
+          <a onclick="hide()" href="#catalogs" class="pagenav">Young Living Catalogs</a>
+          <a onclick="hide()" href="https://www.youngliving.com/vo/#/signup/new-start?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" title="Go to Young Living's Registration Page" target="_blank" class="signup">Sign-Up</a>
         </nav>
       </div>
     </div>
@@ -97,11 +113,11 @@
     </div>
     <div class="decide">
       <p class="decide">&#x2780;&nbsp; Get full details about membership by visiting the
-        <a href="/pages/membership.html">Membership page...</a>
+        <a target="_blank" href="/pages/membership.html">Membership page...</a>
       </p>
 
       <p class="decide">&#x2781;&nbsp; Once you have decided, you can register at Young Living by clicking the <span class="sign-up" title="In the navigation bar">sign-up</span> tab.</p>
-        <span title="Generates automatically from this site" class="lmp">Lil Miss Pure Distributor # 2831347</span>
+      <span title="Generates automatically from this site" class="lmp">Lil Miss Pure Distributor # 2831347</span>
     </div>
 
 
@@ -118,12 +134,12 @@
       <h2 class="subhead">Listed below are a couple of my best-sellers</h2>
 
       <section class="sk-display spacer">
-        <img class="sk" src="/photos/product-photos/premium-home-sk-2048x1365.jpg" alt="Home-Starter-Kit">
+        <img class="sk" srcset="/photos/product-photos/premium-home-sk-2048x1365.jpg 2000w, /photos/product-photos/premium-home-sk-400x267.jpg 400w" src="/photos/product-photos/premium-home-sk-400x267.jpg" alt="Home-Starter-Kit">
         <div class="sk-description diffuser">
           <h1>Starter Kit with Home Diffuser</h1>
           <p>This kit offers many of the personal care and home products that are made with the Thieves essential oil blend.</p>
-          <li class="sk"><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-          <li class="sk"><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+          <li class="sk"><span class="retail">Retail</span><span class="regprice">$160.00 USD</span></li>
+          <li class="sk"><span class="members">Members</span><span class="price">$160.00 USD</span></li>
           <div class="purchase-sk">
             <a class="purchase-sk" href="https://www.youngliving.com/en_US/products/premium-starter-kit-with-home?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
               <span class="purchase-sk">Purchase</span>
@@ -134,12 +150,12 @@
         </div>
       </section>
       <section class="sk-display">
-        <img class="sk" src="/photos/product-photos/thieves-sk2-2048x1913.jpg" alt="Home-Starter-Kit">
+        <img class="sk" srcset="/photos/product-photos/thieves-sk2-2048x1913.jpg 2000w, /photos/product-photos/thieves-sk-400x374.jpg 400w" src="/photos/product-photos/thieves-sk-400x374.jpg" alt="Home-Starter-Kit">
         <div class="sk-description thieves-sk">
           <h1>Starter Kit with Thieves</h1>
           <p>This kit offers many of the personal care and home products that are made with the Thieves essential oil blend.</p>
-          <li class="sk"><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-          <li class="sk"><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+          <li class="sk"><span class="retail">Retail</span><span class="regprice">$160.00 USD</span></li>
+          <li class="sk"><span class="members">Members</span><span class="price">$160.00 USD</span></li>
           <div class="purchase-sk">
             <a class="purchase-sk" href="https://www.youngliving.com/en_US/products/premium-starter-kit-with-thieves?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
               <span class="purchase-sk">Purchase</span>
@@ -161,16 +177,20 @@
       </div>
       <h2 class="subhead">Listed below are a few of my favorites</h2>
       <section class="singles-display">
+
         <div class="wrapper lavender">
 
           <img class="singles" src="/photos/product-photos/lavender-267x640.jpg" alt="Lavender">
 
           <div class="description">
             <h1>Lavender</h1>
-            <p>Use Lavender as part of your evening routine. Rub oil on the bottom of your feet before bed or spritz your pillow with distilled water and Lavender mixed in a spray bottle.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>One of the most popular essential oils. Diffuse for a calming, fresh scent. Add a few drops to a soothing nighttime bath. Sprits on a pillow at night to unwind. Or add to your favorite lotions or skin care products to promote healthy skin.
+              A key ingredient in Stress Away and Tranquil Roll-on.</p>
           </div>
+        </div>
+        <div class="price-display lavender">
+          <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
         </div>
         <div class="purchase lavender">
           <a class="purchase" href="https://www.youngliving.com/en_US/products/lavender-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
@@ -185,13 +205,16 @@
           <img class="singles" src="/photos/product-photos/peppermint-267x640.jpg" alt="Peppermint">
           <div class="description">
             <h1>Peppermint</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto vero corporis, necessitatibus reiciendis. Voluptas eveniet at quod qui. Expedita voluptate, delectus doloremque, quae rerum fuga temporibus animi! Id, expedita culpa!</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>Use topically to support normal digestion and promote health bowel function. Diffuse mid-day to promote focus. Apply topically to relieve head and neck tensions. Or spirits as an invigoration scent during exercise to support performance. A
+              key ingredient in DiGize, Tummygize, PanAway, and Cool Azul</p>
           </div>
         </div>
+        <div class="price-display peppermint">
+          <li><span class="retail">Retail</span><span class="regprice">$28.29 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$21.50 USD</span></li>
+        </div>
         <div class="purchase peppermint">
-          <a class="purchase" href="">
+          <a class="purchase" target="_blank" href="https://www.youngliving.com/en_US/products/peppermint-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -203,10 +226,12 @@
           <img class="singles" src="/photos/product-photos/frankincense-267x640.jpg" alt="Frankincense">
           <div class="description">
             <h1>Frankincense</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, quisquam. Nam nulla ipsam illum quis velit odit unde fugit amet sint inventore ducimus totam ullam corrupti voluptatibus, veritatis perspiciatis maiores.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A wonder of the ancient world, diffuse during mediation or prayer. Add to your favorite lotions or skin care products to smooth the appearance of healthy looking skin. Diffuse or apply topically to support your immune system.</p>
           </div>
+        </div>
+        <div class="price-display frankincense">
+          <li><span class="retail">Retail</span><span class="regprice">$96.71 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$73.50 USD</span></li>
         </div>
         <div class="purchase frankincense">
           <a class="purchase" href="https://www.youngliving.com/en_US/products/frankincense-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
@@ -223,13 +248,16 @@
           <img class="singles" src="/photos/product-photos/eucalyptus-radiata-267x640.jpg" alt="Eucalyptus">
           <div class="description">
             <h1>Eucalyptus</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eum facilis soluta ex nisi harum molestias voluptatem ea ab similique delectus est, atque expedita fuga maxime libero, culpa reprehenderit? Voluptas.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>With a fresh, yet mildly pungent aroma, diffuse to promote a stimulating and rejuvenating environment and support a healthy respiratory system. Diffuse or apply topically for immune support. Add it to your household cleaners for a burst of
+              extra freshness. A key ingredient in R.C., Breath Again, and Thieves.</p>
           </div>
         </div>
+        <div class="price-display eucalyptus">
+          <li><span class="retail">Retail</span><span class="regprice">$24.34 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$18.50 USD</span></li>
+        </div>
         <div class="purchase eucalyptus">
-          <a class="purchase" href="">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/eucalyptus-radiata-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -240,16 +268,19 @@
       <!-- rosemary -->
       <section class="singles-display">
         <div class="wrapper rosemary">
-          <img class="singles" src="/photos/product-photos/rosemary-264x640.jpg" alt="Rosemary">
+          <img class="singles" src="/photos/product-photos/rosemary-vitality-264x640.jpg" alt="Rosemary">
           <div class="description">
-            <h1>Rosemary</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta molestias tempora minima iusto ex magni et ad molestiae. Reiciendis tenetur praesentium iste illo, tempore incidunt mollitia. Ducimus delectus eius, illo.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <h1>Rosemary Vitality</h1>
+            <p>A ﬂavorful herb that adds a unique herbaceous taste to food. Replace dried rosemary in sauces, marinades, or balsamic vinegars with just a single drop. Add to your favorite bread or pasta dish. Apply topically or diffuse for overall wellness.
+              A key ingredient in Thieves, Inner Defense Capsules, and En-R-Gee.</p>
           </div>
         </div>
+        <div class="price-display rosemary">
+          <li><span class="retail">Retail</span><span class="regprice">$9.87 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$7.50 USD</span></li>
+        </div>
         <div class="purchase rosemary">
-          <a class="purchase" href="">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/rosemary-vitality-5ml?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -272,13 +303,17 @@
           <img class="blends" src="/photos/product-photos/thieves-267x640.jpg" alt="Thieves">
           <div class="description">
             <h1>Thieves</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ipsum pariatur, earum at excepturi repellat porro, quibusdam, quos et voluptate neque quidem accusantium cupiditate eos. Quia dignissimos ea vero esse!</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>One of Young Living’s most popular blends of Clove, Cinnamon, Rosemary, Lemon, and Eucalyptus. Diffuse or apply topically to support healthy immune function. Add Thieves Vitality to your morning juice, tea, coffee or Ningxia Red shot for a
+              sweet, spicy ﬂavor boost. An easy way to support overall wellness. A key ingredient in the Thieves line up of products.</p>
           </div>
+
+        </div>
+        <div class="price-display thieves">
+          <li><span class="retail">Retail</span><span class="regprice">$44.41 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$33.75 USD</span></li>
         </div>
         <div class="purchase thieves">
-          <a class="purchase" href="">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/thieves-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -292,13 +327,15 @@
           <img class="blends" src="/photos/product-photos/panaway-256x640.jpg" alt="Panaway">
           <div class="description">
             <h1>Panaway</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio eum vero ut alias quas sapiente, ipsum a numquam corporis maxime est quaerat voluptate nemo. Quaerat adipisci, rem consequuntur dolorem ad?</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A best selling blend composed of Wintergreen, Helichrysum, Clove, and Peppermint. Has a soothing aroma and soothes muscles after exercise. May also add to a carrier oil for a relaxing massage.</p>
           </div>
         </div>
+        <div class="price-display panaway">
+          <li><span class="retail">Retail</span><span class="regprice">$46.38 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$35.25 USD</span></li>
+        </div>
         <div class="purchase panaway">
-          <a class="purchase" href="">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/panaway-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -312,13 +349,15 @@
           <img class="blends" src="/photos/product-photos/tummygize-264x640.jpg" alt="Tummygize">
           <div class="description">
             <h1>Tummygize</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius asperiores, totam, nulla unde dicta rerum quam numquam nobis libero ut deleniti inventore dolores voluptatem quia cumque dolorem. Dolores, tenetur, iusto.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A blend of Tarragon, Ginger, Peppermint, Juniper, Fennel, Lemongrass, Anise, Patchouli gastrointestinal support pre-diluted for use on kids. Rub directly on tummies to ease gas or constipation common to little ones. Similar to Dizige for adults.</p>
           </div>
         </div>
+        <div class="price-display tummygize">
+          <li><span class="retail">Retail</span><span class="regprice">$16.78 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$12.75 USD</span></li>
+        </div>
         <div class="purchase tummygize">
-          <a class="purchase" href="">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/tummygize-5ml?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -332,13 +371,15 @@
           <img class="blends" src="/photos/product-photos/rc-267x640.jpg" alt="R.C.">
           <div class="description">
             <h1>R.C.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi provident maxime totam repellat nihil adipisci qui iure quaerat atque! Molestias, eum. Hic voluptas distinctio, illum excepturi quam, dicta eaque veritatis!</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A respiratory powerhouse that contains three types of Eucalyptus. Diffuse to create a comforting aroma or rub on the chest for an uplifting, opening sensation.</p>
           </div>
         </div>
+        <div class="price-display rc">
+          <li><span class="retail">Retail</span><span class="regprice">$13.49 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$10.25 USD</span></li>
+        </div>
         <div class="purchase rc">
-          <a class="purchase" href="">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/rc-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -351,14 +392,17 @@
         <div class="wrapper tranquil">
           <img class="tranquil" src="/photos/product-photos/tranquil-roll-180x640.jpg" alt="Tranquil">
           <div class="description">
-            <h1>Tranquil</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus debitis nisi, cum vel libero suscipit molestiae totam reiciendis! Amet consequuntur delectus totam quasi alias eum asperiores odio error maiores deserunt.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <h1>Tranquil Roll-on</h1>
+            <p>A relaxing and centering blend of Lavender, Cedarwood and Roman Chamomile in a convenient roll-on applicator. For adults an kids alike, make it part of your bedtime routine by applying to the bottoms of the feet. Inhale or apply over your
+              heart for times of stress or after a hectic day.</p>
           </div>
         </div>
+        <div class="price-display tranquil">
+          <li><span class="retail">Retail</span><span class="regprice">$37.83 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$28.75 USD</span></li>
+        </div>
         <div class="purchase tranquil">
-          <a class="purchase" href="">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/tranquil-roll-on?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -371,68 +415,97 @@
     <!-- for the home....................... -->
 
     <div id="for-home" class="home">
+
       <div class="heading">
         <div class="line"></div>
         <h1>For the Home</h1>
         <div class="line"></div>
       </div>
+
       <h2 class="subhead">Listed below are a few of my favorites</h2>
-      <section class="home">
-        <div class="wrapper t-cleaner large-home">
+
+      <section class="large home">
+
+        <div class="home-wrapper t-cleaner large-home">
+
           <figure>
-            <img class="t-cleaner" src="/photos/product-photos/thieves-housholdclean-473x640.jpg" alt="Lavender">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/thieves-housholdclean-267x717.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/thieves-housholdclean-267x717.jpg 473w">
+              <img class="t-cleaner" src="/photos/product-photos/thieves-housholdclean-267x717.jpg" alt="Lavender">
+            </picture>
           </figure>
+
           <div class="home-description">
             <h1>Thieves Household Cleaner</h1>
-            <p>Use Lavender as part of your evening routine. Rub oil on the bottom of your feet before bed or spritz your pillow with distilled water and Lavender mixed in a spray bottle.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A naturally derived, plant-based cleaner containing Thieves Blend essential oils that gets the job done! It is an exceptional multipurpose solution can be used for virtually any surface in your home or ofﬁce. And, it smells amazing!</p>
           </div>
+
         </div>
+
+        <div class="price-display t-cleaner">
+          <li><span class="retail">Retail</span><span class="regprice">$28.95 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$22.00 USD</span></li>
+        </div>
+
         <div class="purchase t-cleaner">
-          <a class="purchase" href="https://www.youngliving.com/en_US/products/lavender-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/thieves-household-cleaner?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
           </a>
         </div>
+
       </section>
 
-      <section class="singles-display large home">
-        <div class="wrapper t-laundry large-home">
+      <section class="large home">
+        <div class="home-wrapper t-laundry large-home">
           <figure>
-            <img class="t-laundry" src="/photos/product-photos/thieves-laundry-335x640.jpg" alt="Lavender">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/thieves-laundry-267x510.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/thieves-laundry-335x640.jpg 335w">
+              <img class="t-laundry" src="/photos/product-photos/thieves-laundry-267x510.jpg" alt="Lavender">
+            </picture>
           </figure>
 
-          <div class="description">
+          <div class="home-description">
             <h1>Thieves Laundry Detergent</h1>
-            <p>Use Lavender as part of your evening routine. Rub oil on the bottom of your feet before bed or spritz your pillow with distilled water and Lavender mixed in a spray bottle.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>An ultra-concentrated plant-based detergent containing the Thieves Blend essential oil that cleans gently and naturally. Contains natural enzymes to clean clothes without the use of chemicals. Also HE safe.</p>
           </div>
+        </div>
+        <div class="price-display t-laundry">
+          <li><span class="retail">Retail</span><span class="regprice">$37.83 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$28.75 USD</span></li>
         </div>
         <div class="purchase t-laundry">
-          <a class="purchase" href="https://www.youngliving.com/en_US/products/lavender-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/thieves-laundry-soap?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
           </a>
         </div>
       </section>
-      <section class="singles-display large home">
-        <div class="wrapper t-dish large-home">
+
+      <section class="large home">
+        <div class="home-wrapper t-dish large-home">
           <figure>
-            <img class="t-dish" src="/photos/product-photos/thieves-dish-356x640.jpg" alt="Lavender">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/thieves-dish-267x647.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/thieves-dish-356x640.jpg 335w">
+              <img class="t-dish" src="/photos/product-photos/thieves-dish-267x647.jpg" alt="Lavender">
+            </picture>
           </figure>
-          <div class="description">
+          <div class="home-description">
             <h1>Thieves Dish Soap</h1>
-            <p>Use Lavender as part of your evening routine. Rub oil on the bottom of your feet before bed or spritz your pillow with distilled water and Lavender mixed in a spray bottle.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A concentrated, chemical free detergent with the cleaning power of Thieves, Jade Lemon and Bergamot essential oils. Safely cleans with plant based ingredients to leave your dishes sparkling clean.</p>
           </div>
         </div>
+        <div class="price-display t-dish">
+          <li><span class="retail">Retail</span><span class="regprice">$18.09 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$13.75 USD</span></li>
+        </div>
         <div class="purchase t-dish">
-          <a class="purchase" href="https://www.youngliving.com/en_US/products/lavender-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/thieves-dish-soap?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -452,43 +525,62 @@
       </div>
       <h2 class="subhead">Listed below are a few of my favorites</h2>
 
+
       <!-- immupro -->
-      <section class="singles-display large personal">
+      <section class="large personal">
         <div class="wrapper immupro large-personal">
           <figure>
-            <img class="immupro" src="/photos/product-photos/immupro-409x640.jpg" alt="immupro">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/immupro-267x418.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/immupro-409x640.jpg 409w">
+              <img class="immupro" src="/photos/product-photos/267x418.jpg" alt="immupro">
+            </picture>
           </figure>
           <div class="description">
             <h1>Immupro Supplement</h1>
-            <p>Use Lavender as part of your evening routine. Rub oil on the bottom of your feet before bed or spritz your pillow with distilled water and Lavender mixed in a spray bottle.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A powerhouse supplement that combines Ningxia wolfberry with a unique blend of mushroom powders, and orange essential oil to deliver powerful antioxidant activity to help reduce the damaging effects of oxidative stress from free radicals.
+              Specially formulated for exceptional immune support.</p>
           </div>
         </div>
+
+        <div class="price-display immupro">
+          <li><span class="retail">Retail</span><span class="regprice">$44.41 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$33.75 USD</span></li>
+        </div>
+
         <div class="purchase immupro">
-          <a class="purchase" href="https://www.youngliving.com/en_US/products/lavender-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/immupro-chewable-tablets?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
           </a>
         </div>
+
       </section>
+
 
       <!-- ningxia -->
       <section class="singles-display large personal">
         <div class="wrapper ningxia large-personal">
           <figure>
-            <img class="ningxia" src="/photos/product-photos/ningxia-red-603x640.jpg" alt="ningxia">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/ningxia-red-267x284.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/ningxia-red-603x640.jpg 603w">
+              <img class="ningxia" src="/photos/product-photos/ningxia-red-267x284.jpg" alt="ningxia-red">
+            </picture>
           </figure>
           <div class="description">
-            <h1>Thieves Household Cleaner</h1>
-            <p>Use Lavender as part of your evening routine. Rub oil on the bottom of your feet before bed or spritz your pillow with distilled water and Lavender mixed in a spray bottle.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <h1>NingXia Red</h1>
+            <p>An antioxidant powerhouse and packed with super foods, this juice of Wolfberry and 4 essential oils supports whole body health. Also provides support for energy, eye health and normal cellular function. Blend into your smoothie or morning
+              juice as part of a quick, convenient breakfast. Treat children to this tasty drink instead of sugary sodas or juice cocktails.</p>
           </div>
         </div>
+        <div class="price-display ningxia">
+          <li><span class="retail">Retail</span><span class="regprice">$93.42 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$71.00 USD</span></li>
+        </div>
         <div class="purchase ningxia">
-          <a class="purchase" href="https://www.youngliving.com/en_US/products/lavender-essential-oil?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/ningxia-red?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -499,18 +591,24 @@
       <!-- kidscents -->
       <section class="singles-display large personal">
         <div class="wrapper kidscents large-personal">
-          <figure>
-            <img class="kidscents" src="/photos/product-photos/kidscents-bath-228x640.jpg" alt="kidscents">
+          <figure class="kidscents">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/kidscents-bath-267x751.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/kidscents-bath-728x2048.jpg 728w">
+              <img class="kidscents" src="/photos/product-photos/kidscents-bath-267x751.jpg" alt="kidscents-bath">
+            </picture>
           </figure>
           <div class="description">
             <h1>KidScents - Bath Gel</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odit, rem ratione esse fugiat eaque modi necessitatibus neque aliquam odio aperiam, temporibus eius, veniam explicabo aspernatur minima animi earum quo.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>An all natural, safe, and gentle soap that provides exceptional cleaning power. Formulated with MSM, aloe vera, antioxidants, and pure Lemon, Cedarwood, and other essential oils. Also, pH balanced for little people skin.</p>
           </div>
         </div>
+        <div class="price-display kidscents">
+          <li><span class="retail">Retail</span><span class="regprice">$20.72 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$15.75 USD</span></li>
+        </div>
         <div class="purchase kidscents">
-          <a class="purchase" href="#" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/kidscents-bath-gel?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -522,17 +620,24 @@
       <section class="singles-display large personal">
         <div class="wrapper cool-azul large-personal">
           <figure>
-            <img class="cool-azul" src="/photos/product-photos/coolazul-sportgel-330x640.jpg" alt="cool-azul">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/coolazul-sportgel-267x518.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/coolazul-sportgel-1056x2048.jpg 1056w">
+              <img class="cool-azul" src="/photos/product-photos/coolazul-sportgel-267x518.jpg" alt="">
+            </picture>
           </figure>
           <div class="description">
             <h1>Cool Azul Sports Gel</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odit, rem ratione esse fugiat eaque modi necessitatibus neque aliquam odio aperiam, temporibus eius, veniam explicabo aspernatur minima animi earum quo.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>Either as a cream or gel, this product is formulated with 10 percent Peppermint essential oil and also includes menthol, and camphor. It provides a cooling sensation on skin after exercise or provides a soothing effect on sore muscles. An
+              invigorating yet relaxing aroma when massaged.</p>
           </div>
         </div>
+        <div class="price-display cool-azul">
+          <li><span class="retail">Retail</span><span class="regprice">$52.30 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$39.75 USD</span></li>
+        </div>
         <div class="purchase cool-azul">
-          <a class="purchase" href="#" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/cool-azul-sports-gel?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -544,17 +649,24 @@
       <section class="singles-display large personal">
         <div class="wrapper orange-blossom large-personal">
           <figure>
-            <img class="orange-blossom" src="/photos/product-photos/orangeblossom-face-211x640.jpg" alt="orange-blossom">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/orangeblossom-face-267x811.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/orangeblossom-face-337x1024.jpg 337w">
+              <img class="orange-blossom" src="/photos/product-photos/orangeblossom-face-267x811.jpg" alt="">
+            </picture>
           </figure>
           <div class="description">
             <h1>Orange Blossom Facial Wash</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odit, rem ratione esse fugiat eaque modi necessitatibus neque aliquam odio aperiam, temporibus eius, veniam explicabo aspernatur minima animi earum quo.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>Good luck catching this one in stock! It is a gentle, soap-free facial wash cleanses the skin without stripping natural oils, and it smells heavenly! It also contains MSM for softening and Lavender essential oil to soothe skin. Plus, a little
+              goes a long way.</p>
           </div>
         </div>
+        <div class="price-display orange-blossom">
+          <li><span class="retail">Retail</span><span class="regprice">$53.95 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$41.00 USD</span></li>
+        </div>
         <div class="purchase orange-blossom">
-          <a class="purchase" href="#" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/orange-blossom-facial-wash?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -566,17 +678,23 @@
       <section class="singles-display large personal">
         <div class="wrapper shutran large-personal">
           <figure>
-            <img class="shutran" src="/photos/product-photos/shutran-shave-312x640.jpg" alt="shutran">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/shutran-shave-267x548.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/shutran-shave-997x2048.jpg 997w">
+              <img class="shutran" src="/photos/product-photos/shutran-shave-267x548.jpg" alt="shutran">
+            </picture>
           </figure>
           <div class="description">
             <h1>Shutran Shave Cream</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odit, rem ratione esse fugiat eaque modi necessitatibus neque aliquam odio aperiam, temporibus eius, veniam explicabo aspernatur minima animi earum quo.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>Shut-in has an empowering aroma designed for men that contains the fresh, woodsy aroma of Idaho Blue Spruce. This cream delivers an incredibly close, smooth, and hydrating shave.</p>
           </div>
         </div>
+        <div class="price-display shutran">
+          <li><span class="retail">Retail</span><span class="regprice">$25.99 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$19.75 USD</span></li>
+        </div>
         <div class="purchase shutran">
-          <a class="purchase" href="#" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/shutran-shave-cream?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -588,17 +706,23 @@
       <section class="singles-display large personal">
         <div class="wrapper copaiba large-personal">
           <figure>
-            <img class="copaiba" src="/photos/product-photos/copaiba-vanilla-shampoo-223x640.jpg" alt="copaiba">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/copaiba-vanilla-shampoo-267x768.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/copaiba-vanilla-shampoo-712x2048.jpg 712w">
+              <img class="copaiba" src="/photos/product-photos/copaiba-vanilla-shampoo-267x768.jpg" alt="copaiba">
+            </picture>
           </figure>
           <div class="description">
             <h1>Copaiba Vanilla Shampoo</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odit, rem ratione esse fugiat eaque modi necessitatibus neque aliquam odio aperiam, temporibus eius, veniam explicabo aspernatur minima animi earum quo.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>A rich, hydrating, non toxic cleanser for dry or damaged hair. Infused with essential oils of Copaiba, Rosemary, Lavender and Lime. Shampoo can be followed by Copaiba Vanilla Conditioner if desired.</p>
           </div>
         </div>
+        <div class="price-display copaiba">
+          <li><span class="retail">Retail</span><span class="regprice">$29.93 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$22.75 USD</span></li>
+        </div>
         <div class="purchase copaiba">
-          <a class="purchase" href="#" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/copaiba-vanilla-shampoo?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -610,17 +734,24 @@
       <section class="singles-display large personal">
         <div class="wrapper lav-hand large-personal">
           <figure>
-            <img class="lav-hand" src="/photos/product-photos/lavender-lotion-291x640.jpg" alt="lav-hand">
+            <picture>
+              <source media="(max-width: 750px)" srcset="/photos/product-photos/lavender-lotion-267x588.jpg 267w">
+              <source media="(min-width: 751px)" srcset="/photos/product-photos/lavender-lotion-930x2048.jpg 930w">
+              <img class="lav-hand" src="/photos/product-photos/lavender-lotion-267x588.jpg" alt="lav-hand">
+            </picture>
           </figure>
           <div class="description">
             <h1>Lavender Hand &amp; Body Lotion</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore odit, rem ratione esse fugiat eaque modi necessitatibus neque aliquam odio aperiam, temporibus eius, veniam explicabo aspernatur minima animi earum quo.</p>
-            <li><span class="retail">Retail</span><span class="regprice">$30.92 USD</span></li>
-            <li><span class="members">Members</span><span class="price">$23.50 USD</span></li>
+            <p>Again, another that is hard to keep in stock due to popularity! Infused with Lavender, Myrrh, Lemon, Rosemary essential oils along with other plant-based ingredients. It moisturizes and protects skin from overexposure for long-lasting hydration.
+              Plus, a little goes a long way!</p>
           </div>
         </div>
+        <div class="price-display lav-hand">
+          <li><span class="retail">Retail</span><span class="regprice">$27.30 USD</span></li>
+          <li><span class="members">Members</span><span class="price">$20.75 USD</span></li>
+        </div>
         <div class="purchase lav-hand">
-          <a class="purchase" href="#" target="_blank">
+          <a class="purchase" href="https://www.youngliving.com/en_US/products/lavender-hand-body-lotion?sponsorid=2831347&enrollerid=2831347&isocountrycode=US&culture=en-US&type=member" target="_blank">
             <span class="purchase">Purchase</span>
             <span class="purchase">or</span>
             <span class="purchase">Learn More</span>
@@ -631,36 +762,41 @@
     </div>
 
   </section>
+  </div>
 
   <section id="catalogs" class="catalogs">
 
-  <h1 class="product-catalogs">Product Catalogs</h1>
+    <h1 class="product-catalogs">Product Catalogs</h1>
 
-  <h2 class="subhead">Explore many more Young Living products</h2>
+    <h2 class="subhead">Explore many more Young Living products</h2>
 
-  <div class="catalog-container">
-    <h1 class="embeds">Young Living 2017 Product Guide</h1>
-    <div data-configid="29245802/47482254" class="issuuembed yl-catalog">
-      <iframe class="catalog" src="//e.issuu.com/embed.html#29245802/47482254" frameborder="0" allowfullscreen></iframe>
+    <div class="catalog-container">
+      <h1 class="embeds">Young Living 2017 Product Guide</h1>
+      <div data-configid="29245802/47482254" class="issuuembed yl-catalog">
+        <iframe class="catalog" src="//e.issuu.com/embed.html#29245802/47482254" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script> -->
     </div>
-<!-- <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script> -->
-  </div>
 
-  <div class="catalog-container">
-    <h1 class="embeds">Thieves Booklet 2017</h1>
+    <div class="catalog-container">
+      <h1 class="embeds">Thieves Booklet 2017</h1>
 
-    <div class="issuuembed yl-catalog">
-      <iframe class="catalog" src="//e.issuu.com/embed.html#29245802/47483100" frameborder="0" allowfullscreen></iframe>
+      <div class="issuuembed yl-catalog">
+        <iframe class="catalog" src="//e.issuu.com/embed.html#29245802/47483100" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script> data-configid="29245802/47483100"-->
     </div>
-<!-- <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script> data-configid="29245802/47483100"-->
-  </div>
 
   </section>
+
+  <!--back to top button  -->
+  <a href="#topPage" title="Top-of-Page" id="topButton" class="bottomMenu hide"><svg class="top"><use xlink:href="../assets/icons.svg#chevron-up"></use></svg></a>
+
 
   <footer>
     <div class="footwrap">
       <div class="copy">&copy; 2017 Lil' Miss Pure</div>
-      <div class="credit">Site Development: Benjamin Faught</div>
+      <div class="credit"></div>
       <div class="social-foot">
         <a href="https://www.facebook.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-facebook"></i></a>
         <a href="https://www.pinterest.com/LilMissPure/" target="_blank" class="social-link"><i class="icon-pinterest-p"></i></a>
@@ -668,129 +804,18 @@
     </div>
   </footer>
 
-  <!--drop down menu v.2  -->
-
-  <input type="checkbox" id="show-menu">
-  <div id="dropdown" class="layer">
-
-      <div class="menu">
-
-        <input name="menulist" type="radio" id="show-products" checked="checked">
-        <input name="menulist" type="radio" id="show-membership">
-        <input name="menulist" type="radio" id="show-learn">
-        <input name="menulist" type="radio" id="show-events">
-        <input name="menulist" type="radio" id="show-about">
-        <input name="menulist" type="radio" id="show-contact">
-
-        <div class="skin">
-
-          <a class="home" href="/index.html">
-            <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>
-          </a>
-
-          <label id"products-tab" for="show-products">Products</label>
-          <label id"" for="show-membership">Membership</label>
-          <label id"" for="show-learn">Learn</label>
-          <label id"" for="show-events">Events</label>
-          <label id"" for="show-about">About</label>
-          <label id"" for="show-contact">Contact</label>
-
-          <label class="close" for="show-menu">
-            <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>
-          </label>
-
-        </div>
-
-
-        <div id="products" class="products">
-          <div class="menu-wrap">
-            <a class="temp" href="/pages/products.html">
-                <h1>Products</h1>
-                <div class="shell">
-                  <i class="icon-gift" aria-hidden="true"></i>
-                  <i class="icon-sale" aria-hidden="true"></i>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div id="membership" class="membership">
-          <div class="menu-wrap">
-            <a class="temp" href="/pages/membership.html">
-                <h1>Membership</h1>
-                <div class="shell">
-                  <i class="icon-user" aria-hidden="true"></i>
-                  <i class="icon-key" aria-hidden="true"></i>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div id="learn" class="learn">
-          <div class="menu-wrap">
-            <a class="temp" href="/pages/learn.html">
-                <h1>Learn</h1>
-                <div class="shell">
-                  <i class="icon-lightbulb" aria-hidden="true"></i>
-                  <i class="icon-pencil" aria-hidden="true"></i>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div id="events" class="events">
-          <div class="menu-wrap">
-            <a class="temp" href="/pages/events.html">
-                <h1>Events</h1>
-                <div class="shell">
-                  <i class="icon-calendar" aria-hidden="true"></i>
-                  <i class="icon-clock" aria-hidden="true"></i>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div id="about" class="about">
-          <div class="menu-wrap">
-            <a class="temp" href="/pages/about.html">
-                <h1>About</h1>
-                <div class="shell">
-                  <i class="icon-information" aria-hidden="true"></i>
-                </div>
-            </a>
-          </div>
-        </div>
-        <div id="contact" class="contact">
-          <div class="menu-wrap">
-            <a class="temp" href="/pages/contact.html">
-                <h1>Contact</h1>
-                <div class="shell">
-                  <i class="icon-phone2" aria-hidden="true"></i>
-                  <i class="icon-map" aria-hidden="true"></i>
-                </div>
-            </a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="close">
-        <label class="chevron" for="show-menu">
-          <svg class="chevron"><use xlink:href="/assets/icons.svg#chevron-up"></use></svg>
-        </label>
-      </div>
-        <!-- <label class="close" for="show-menu">X</label> -->
-  </div>
-
-  <!--end-drop down menu  -->
-
-
   <!-- optimizing CSS (Google's Page-Speed-Tools)-->
 
 
   <noscript id="deferred-styles">
 
     <link rel="stylesheet" href="/css/drop-menu.css">
-    <link rel="stylesheet" media="(max-width: 600px)" href="/assets/drop-menu-phone.css">
+    <link rel="stylesheet" media="(max-width: 1100px)" href="/assets/drop-menu-phone.css">
     <!-- fonts -->
     <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,700|Allura|Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-icomoon/icomoon-LMP.css">
+
+
 
   </noscript>
   <script>
@@ -808,11 +833,121 @@
     });
     else window.addEventListener('load', loadDeferredStyles);
   </script>
-    <!-- end-optimizing-CSS -->
+  <!-- end-optimizing-CSS -->
+
+  <!--drop down menu v.2  -->
+
+  <input type="checkbox" id="show-menu">
+  <div id="dropdown" class="layer">
+
+    <div class="menu">
+
+      <input name="menulist" type="radio" id="show-products" checked="checked">
+      <input name="menulist" type="radio" id="show-membership">
+      <input name="menulist" type="radio" id="show-learn">
+      <input name="menulist" type="radio" id="show-events">
+      <input name="menulist" type="radio" id="show-about">
+      <input name="menulist" type="radio" id="show-contact">
+
+      <div class="skin">
+
+        <a class="home" href="/index.html">
+            <svg class="home"><use xlink:href="/assets/icons.svg#fa-home"></use></svg>
+          </a>
+
+        <label id "products-tab" for="show-products">Products</label>
+        <label id "" for="show-membership">Membership</label>
+        <label id "" for="show-learn">Learn</label>
+        <label id "" for="show-events">Events</label>
+        <label id "" for="show-about">About</label>
+        <label id "" for="show-contact">Contact</label>
+
+        <label class="close" for="show-menu">
+            <svg class="close"><use xlink:href="/assets/icons.svg#close"></use></svg>
+          </label>
+
+      </div>
 
 
-  <!--back to top button  -->
-  <a href="#topPage" title="Top-of-Page" id="topButton" class="bottomMenu hide"><svg class="top"><use xlink:href="../assets/icons.svg#chevron-up"></use></svg></a>
+      <div id="products" class="products">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/products.html">
+            <h1>Products</h1>
+            <div class="shell">
+              <i class="icon-gift" aria-hidden="true"></i>
+              <i class="icon-sale" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="membership" class="membership">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/membership.html">
+            <h1>Membership</h1>
+            <div class="shell">
+              <i class="icon-user" aria-hidden="true"></i>
+              <i class="icon-key" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="learn" class="learn">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/learn.html">
+            <h1>Learn</h1>
+            <div class="shell">
+              <i class="icon-lightbulb" aria-hidden="true"></i>
+              <i class="icon-pencil" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="events" class="events">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/events.html">
+            <h1>Events</h1>
+            <div class="shell">
+              <i class="icon-calendar" aria-hidden="true"></i>
+              <i class="icon-clock" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="about" class="about">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/about.html">
+            <h1>About</h1>
+            <div class="shell">
+              <i class="icon-information" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="menu-wrap">
+          <a class="temp" href="/pages/contact.html">
+            <h1>Contact</h1>
+            <div class="shell">
+              <i class="icon-phone2" aria-hidden="true"></i>
+              <i class="icon-map" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="close">
+      <label class="chevron" for="show-menu">
+          <svg class="chevron"><use xlink:href="/assets/icons.svg#chevron-up"></use></svg>
+        </label>
+    </div>
+    <!-- <label class="close" for="show-menu">X</label> -->
+  </div>
+
+  <!--end-drop down menu  -->
+
+
 
 
   <!-- back to top script -->
@@ -827,6 +962,13 @@
       }
     };
     window.addEventListener("scroll", myScrollFunc);
+  </script>
+
+  <!-- toggle checkbox -->
+  <script type="text/javascript">
+    function hide() {
+      document.getElementById('s-menu').checked = false;
+    }
   </script>
 
 

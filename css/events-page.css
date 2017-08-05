@@ -134,27 +134,32 @@ h1.logo:hover {
 /*end-header-styles******/
 
 section.atf {
-  min-height: 94vh;
+  height: calc(100vh - 4rem);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #8d8d8d;
+  padding: 6rem 0 2rem 0;
+  /*border: 1px solid pink;*/
 }
 
 
 section.event {
-  margin: 7rem 0 7rem 0;
-  padding: 1rem 1rem 1rem 5%;
+  margin: 0 0 0 0;
+  padding: 1rem 1rem 1rem 1rem;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: flex-start;
-  min-height: 40rem;
+  /*align-items: flex-start;*/
+  height: 95%;
   width: 50%;
   box-shadow: 1px 3px 2.5px 2px rgba(0, 0, 0, .45);
   background-color: rgba(198, 54, 44, 1);
   color: #d7d7d7;
+  /*display: none;*/
+  align-items: center;
+  align-content: center;
 }
 
 section.event address,
@@ -194,6 +199,15 @@ a.map:hover {
   text-decoration: underline;
 }
 
+div.fb-page {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  height: 500px;
+  width: 80%;
+  /*border: 1px solid pink;*/
+}
+
 
 
 /*footer*/
@@ -218,7 +232,7 @@ div.footwrap {
   width: 70%;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid rgba(0, 0, 0, .25);
+  /*border-top: 1px solid rgba(0, 0, 0, .25);*/
   padding: 1.25rem 0 1.25rem 0;
 }
 
@@ -239,117 +253,130 @@ div.credit a {
 }
 
 
-/*tablet*/
-@media screen and (max-width: 800px){
 
-  section.atf {
-    width: 100%;
-    align-items: center;
+
+/*phone and tablet*/
+
+@media screen and (max-width: 1100px) {
+
+  /*header-styles v2 phone******/
+  header {
+    height: 5.5rem;
   }
-
-  div.event-photo {
-    align-self: center;
-    height: 50%;
-  }
-
-  section.event {
-    width: 95%;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-around;
-    height: 70vh;
-    /*min-height: 70vh;*/
-    /*max-height: 140vh;*/
-  }
-
-}
-
-/*phone*/
-@media screen and (max-width: 600px){
-
-  /*header-styles v2******/
-
   nav.main {
-    height: 4rem;
+    height: 5.5rem;
     width: 25%;
     align-items: center;
     /*border: 1px solid pink;*/
   }
-
-  nav.main > label.menu {
+  nav.main>label.menu {
     justify-content: flex-start;
     align-items: center;
     left: 0;
     padding: 0 0 0 5px;
-    height: 4rem;
+    height: 5.5rem;
+    font-size: 1.7rem;
   }
-
-  header > a {
+  label.menu>svg.navicon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  header>a {
     margin-right: 0;
-    padding-right: 0; /**/
+    padding-right: 0;
+    /**/
   }
-
   a.gohome {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4rem;
+    height: 5.5rem;
     width: 50%;
     align-self: center;
   }
-
   h1 {
     font-family: 'Raleway', sans-serif;
   }
-
   h1.logo {
-    font-size: 2.35rem;
+    font-size: 2.65rem;
   }
-
-
   div.social {
+    height: 5.5rem;
     width: 25%;
     justify-content: flex-end;
-    margin-right: 0; /**/
+    margin-right: 0;
+    /**/
   }
-
   a.social {
-    font-size: 1.75rem;
-    padding-right: 2.5rem; /**/
+    font-size: 2rem;
+    padding-right: 2.5rem;
+    /**/
   }
-
   h1.logo {
-    padding: 0 0; /**/
+    padding: 0 0;
+    /**/
     margin-right: 1rem;
   }
-
   /*end-header-styles******/
 
   section.atf {
+    height: auto;
+    min-height: calc(100vh - 5.5rem); 
     width: 100%;
+    align-items: center;
+  }
+
+  div.fb-page {
+    /*height: 75%;*/
+    width: 90%;
+    height: 500px;
   }
 
   section.event {
-    /*margin: 1rem 0 1rem 0;*/
     width: 95%;
     padding: 1rem;
-    height: 70vh;
+    align-items: center;
+    justify-content: flex-start;
+    /*align-content: center;*/
+    height: auto;
+    /*min-height: 70vh;*/
+    /*max-height: 140vh;*/
   }
 
-  div.event-photo {
-    /*align-self: center;*/
-    height: 50%;
-    /*min-height: 10rem;*/
-    width: 95%;
+  /*footer(phone)*********************/
+
+  footer {
+    font-size: 1rem;
+    height: 8vh;
+  }
+
+  a.social-link {
+    display: none;
+    font-size: 2rem;
+    padding: 1.25rem;
   }
 
   div.footwrap {
-    width: 100%;
+    width: 95%;
+    padding-right: 4rem;
   }
 
+  /*back-to-top button (phone)*/
   .bottomMenu {
-    bottom: 3.3rem;
+    height: 4rem;
+    width: 4rem;
     right: 1rem;
   }
+  svg.top {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+}
+
+/*tablet-only*/
+@media screen and (min-width: 750px) and (max-width: 1100px){
+
+
 
 }
