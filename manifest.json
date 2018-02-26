@@ -1,0 +1,30 @@
+{
+    "name": "Lil'Miss Pure - Essential Oils",
+    "short_name": "LilMissPure",
+    "icons": [
+      {
+        "src": "Pure-favicons-thick/app-icon-180x180.png",
+        "type": "image/png",
+        "sizes": "180x180"
+      },
+      {
+        "src": "Pure-favicons-thick/app-icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "Pure-favicons-thick/app-icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "scope": "/pages/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#fff",
+    "theme_color": "#C23331",
+    "description": "Indepedent Distributor - Young Living Essential Oils",
+    "dir": "ltr",
+    "lang": "en-US"
+  }

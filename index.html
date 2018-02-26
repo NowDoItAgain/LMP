@@ -8,25 +8,33 @@
   <!-- posting links (Open Graph protocol)-->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Lil Miss Pure" />
-  <meta property="og:url" content="http://lmpdev-162920.appspot.com/" />
+  <meta property="og:url" content="https://www.lilmisspure.com/" />
   <meta property="og:description" content="Young Living Essential Oils, Distiributor # 2831347, Bartlett, TN" />
-  <meta property="og:image" content="http://lmpdev-162920.appspot.com/photos/YL-HOME-1024x620.jpg" />
+  <meta property="og:image" content="https://www.lilmisspure.com/photos/YL-HOME-1024x620.jpg" />
   <!-- favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="Pure-favicons-thick/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="Pure-favicons-thick/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="Pure-favicons-thick/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="Pure-favicons-thick/safari-pinned-tab.svg" color="#da3c3c">
   <meta name="theme-color" content="#ffffff">
+  <!-- web app -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="LilMissPure">
+  
   <!-- Style-sheets -->
   <link rel="stylesheet" href="css/mcleod-reset.css">
   <link rel="stylesheet" href="main.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway|Allura|Lato:400,700" rel="stylesheet">
   <title>Lil' Miss Pure, Young Living Essential Oils Distiributor, Bartlett TN, Memphis TN </title>
+  <script src="/standalone.js"></script>
 </head>
 
 <body>
+
+
 
   <nav id="main-nav" class="main">
     <label class="menu" for="show-menu">
@@ -69,6 +77,8 @@
     </div>
 
 
+
+
   </section>
 
 
@@ -82,7 +92,7 @@
     <link rel="stylesheet" media="(max-width: 1100px)" href="/assets/drop-menu-phone.css">
     <!-- fonts -->
     <link rel="stylesheet" href="/fontawesome-icomoon/icomoon.css">
-  
+
   </noscript>
   <script>
     var loadDeferredStyles = function() {
@@ -219,11 +229,25 @@
 
   <!-- Needed for svgs to work in Internet Explorer -->
 
+<!-- concerning apple iOS web app: this script keeps links from opening in browser -->
+  <script src="/links.js"></script>
 
   <script src="/svg4everybody.js"></script>
   <script>
     svg4everybody();
   </script>
+
+  <!-- google analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-80205105-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 
 </body>
