@@ -15,15 +15,21 @@
   <link rel="apple-touch-icon" sizes="180x180" href="Pure-favicons-thick/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="Pure-favicons-thick/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="Pure-favicons-thick/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/manifest.json">
   <link rel="mask-icon" href="Pure-favicons-thick/safari-pinned-tab.svg" color="#da3c3c">
   <meta name="theme-color" content="#ffffff">
+  <!-- web app -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="LilMissPure">
+  
   <!-- Style-sheets -->
   <link rel="stylesheet" href="css/mcleod-reset.css">
   <link rel="stylesheet" href="main.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Raleway|Allura|Lato:400,700" rel="stylesheet">
   <title>Lil' Miss Pure, Young Living Essential Oils Distiributor, Bartlett TN, Memphis TN </title>
+  <script src="/standalone.js"></script>
 </head>
 
 <body>
@@ -223,6 +229,8 @@
 
   <!-- Needed for svgs to work in Internet Explorer -->
 
+<!-- concerning apple iOS web app: this script keeps links from opening in browser -->
+  <script src="/links.js"></script>
 
   <script src="/svg4everybody.js"></script>
   <script>
