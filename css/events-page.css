@@ -134,7 +134,7 @@ h1.logo:hover {
 /*end-header-styles******/
 
 section.atf {
-  height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4rem);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -321,7 +321,7 @@ div.credit a {
 
   section.atf {
     height: auto;
-    min-height: calc(100vh - 5.5rem); 
+    min-height: calc(100vh - 5.5rem);
     width: 100%;
     align-items: center;
   }

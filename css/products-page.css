@@ -700,7 +700,7 @@ section.singles-display, section.blends-display {
   align-items: center;
   align-content: center;
   width: 33.33%;
-  /*min-width: 30rem;*/
+  min-width: 30rem;
   /*height: 55vh;*/
   /*min-height: 30rem;*/
   padding: 1rem;
@@ -1169,6 +1169,7 @@ div.price-display {
   /*height: 90%;*/
   height: 8rem;
   width: 60%;
+  min-width: 18rem;
   margin-bottom: 2rem;
   /*background-color: #CFDBD4;*/
   /*border: 1px solid #CFDBD4;*/
@@ -1697,6 +1698,23 @@ svg.top {
   /*left: 0;*/
 }
 
+/*special media query*/
+
+@media screen and (max-width: 1500px) {
+
+  img.ningxia {
+    height: 10rem;
+    width: 11rem;
+    margin-top: 2rem;
+    /*border: 1px solid pink;*/
+  }
+  img.immupro {
+    height: 15rem;
+    width: 10rem;
+    margin-top: 2rem;
+    /*border: 1px solid pink;*/
+  }
+}
 
 
 
